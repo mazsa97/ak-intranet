@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent implements OnInit {
+  time = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
+    window.setInterval( () => {
+      this.time = new Date()
+    }, 1000);
   }
 
 }

@@ -7,12 +7,14 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { WebsitesComponent } from './websites/websites.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    WebsitesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,23 @@
+.welcome-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .welcome-logo {
-  width: 300px;
+  width: 275px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.welcome-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-logo {
+    width: 200px;
+  }
 }

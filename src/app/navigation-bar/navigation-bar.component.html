@@ -1,18 +1,42 @@
 <div class="navigation-bar d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
-    <a href="/" class="d-block p-3 link-dark text-decoration-none" title="AK intranet">
-      <img src="../../assets/images/AK_logo.png" class="site-logo" alt="AK-logo">
-    </a>
+    <div class="navbar-logo-div">
+      <a href="/" class="d-block p-3 link-dark text-decoration-none" title="AK intranet">
+        <img src="../../assets/images/AK_logo.png" class="navbar-logo" alt="AK-logo">
+      </a>
+    </div>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <li class="nav-item">
-        <a href="#" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Főoldal">
+        <a routerLink="" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Főoldal">
           <i class="fa fa-lg fa-home"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Súgó">
+        <a routerLink="websites" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Linkek">
+          <i class="fa fa-lg fa-link"></i>
+        </a>
+      </li>
+      <li class="nav-item navigation-help-button">
+        <a class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="modal" data-bs-target="#help-modal">
           <i class="fa fa-lg fa-question-circle"></i>
+          <br>
+          <small>Súgó</small>
         </a>
       </li>
     </ul>
-    
+    <div class="navigation-timer" role="alert">{{time | date:'yyyy/M/d'}} <br> {{time | date:'H:mm:ss'}}</div>
   </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="help-modalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="help-modalTitle">Intranet súgó</h5>
+        <i class="fa fa-lg fa-times close" data-bs-dismiss="modal" aria-label="Close"></i>        
+      </div>
+      <div class="modal-body">
+        Súgó szövegének a helye....
+      </div>
+    </div>
+  </div>
+</div>

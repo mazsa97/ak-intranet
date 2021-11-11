@@ -9,10 +9,57 @@
   color: white !important;
 }
 
-.site-logo {
+.navigation-bar a{
+  border-bottom: .5px solid rgba(240, 192, 109, .5) !important;
+  padding: 15px !important;
+}
+
+.navigation-bar li:hover {
+  background-color: rgba(240, 192, 109, .5)
+}
+
+.navigation-timer {
+  background-color: rgba(240, 192, 109, 1);
+  color: white;
+  text-align: center;
+}
+
+.navigation-help-button, .navigation-help-button small {
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.navbar-logo {
   width: 75px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+}
+
+.navbar-logo-div {
+  border-bottom: 2px solid rgba(240, 192, 109, 1) !important;
+}
+
+.navbar-logo:hover {
+filter: brightness(0) invert(1);
+}
+
+.modal-header, .modal-body {
+  color: white;
+  background-color: rgba(35, 58, 56, .9) !important;
+}
+
+.close {
+  cursor: pointer;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation-bar {
+    width: 75px !important;
+  }
+  .navbar-logo {
+    width: 45px;
+  }
 }
