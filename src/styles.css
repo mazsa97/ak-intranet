@@ -3,3 +3,7 @@
 :not(i){
   font-family: Montserrat !important;
 }
+
+body {
+  background-color: rgba(240, 192, 109, .25);
+}

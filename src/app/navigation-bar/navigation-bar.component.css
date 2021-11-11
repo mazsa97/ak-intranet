@@ -1,5 +1,5 @@
 .navigation-bar {
-  height: 100vh !important;
+  height: 100% !important;
   position:  fixed !important;
   width: 125px !important;
   background-color: rgb(35, 58, 56) !important;
