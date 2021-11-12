@@ -11,9 +11,11 @@
 </div>
 
 <router-outlet></router-outlet>
-
+<!-- 
 <ul *ngIf="router.url === '/websites'">
   <li *ngFor="let link of links">
-    <span class="badge">{{link.id}}</span> {{link.name}}
+    <span class="badge"></span> {{link.name}}
+    <img src="{{thumbnailPath}}{{link.image}}" alt="">
+    <a href="{{link.url}}">dd</a>
   </li>
-</ul>
+</ul> -->

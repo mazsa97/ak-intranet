@@ -10,6 +10,7 @@ import { LINKS } from "./website_links";
 export class WebsitesComponent implements OnInit {
   
   links = LINKS;
+  thumbnailPath = '../../assets/images/thumbnails/';
 
   constructor(public router: Router) { }
 
