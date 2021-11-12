@@ -60,4 +60,10 @@ export const LINKS: Links[] = [
     url: 'https://rextra.hu/', 
     image: 'rextra.png' 
   },
+  { 
+    name: 'Fordító', 
+    category: 'administration', 
+    url: 'https://translate.google.com/', 
+    image: 'fordito.png' 
+  },
 ];

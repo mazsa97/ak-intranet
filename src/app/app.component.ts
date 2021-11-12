@@ -11,5 +11,14 @@ export class AppComponent {
 }
 
 $(function () {
-$('[data-bs-toggle="tooltip"]').tooltip()
+$('[data-bs-toggle="tooltip"]').tooltip();
 })
+
+$(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').click(function () {
+       $('[data-bs-toggle="tooltip"]').tooltip("hide");
+
+    });
+});
+
+

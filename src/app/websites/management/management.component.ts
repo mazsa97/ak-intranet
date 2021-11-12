@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LINKS } from "../website_links";
 
 @Component({
   selector: 'app-management',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./management.component.css']
 })
 export class ManagementComponent implements OnInit {
+  
+  links = LINKS;
+  thumbnailPath = '../../../assets/images/thumbnails/';
 
   constructor() { }
 

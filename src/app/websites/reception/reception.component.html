@@ -1,27 +1,27 @@
-<!-- <h3>Recepció</h3>
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <img class="card-img-top" src="../../../assets/images/AK_logo_welcome.png" style="width: 75px;" alt="Card image cap">
+<h3 class="text-center">Recepció</h3>
+
+<!-- <div class="row link-list">
+  <div class="col" *ngFor="let link of links">
+    <div class="card text-center link-card" *ngIf="link.category == 'reception'">
+      <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
       <div class="card-body">
-        <h5 class="card-title">Link cím</h5>
-        <a href="#" class="btn btn-primary">Megnyitás</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <img class="card-img-top" src="../../../assets/images/AK_logo_welcome.png" style="width: 75px;" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Link cím</h5>
-        <a href="#" class="btn btn-primary">Megnyitás</a>
+        <h5 class="card-title">{{link.name}}</h5>
+        <a href="{{link.url}}" target="_blank" class="btn link-open">Megnyitás</a>
       </div>
     </div>
   </div>
 </div> -->
 
-<ul>
-  <li *ngFor="let link of links">
-    <p *ngIf="link.category !='reception'">{{link.name}} {{link.image}}</p>
-  </li>
-</ul>
+<div class="row link-list">
+  <ng-container *ngFor="let link of links">
+    <div class="col" *ngIf="link.category == 'reception'">
+      <div class="card text-center link-card">
+        <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
+        <div class="card-body">
+          <h5 class="card-title">{{link.name}}</h5>
+          <a href="{{link.url}}" target="_blank" class="btn link-open">Megnyitás</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  </div>

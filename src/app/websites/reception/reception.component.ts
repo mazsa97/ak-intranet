@@ -9,6 +9,7 @@ import { LINKS } from "../website_links";
 export class ReceptionComponent implements OnInit {
   
   links = LINKS;
+  thumbnailPath = '../../../assets/images/thumbnails/';
 
   constructor() { }
 

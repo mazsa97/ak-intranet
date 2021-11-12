@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LINKS } from "../website_links";
 
 @Component({
   selector: 'app-callcenter',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./callcenter.component.css']
 })
 export class CallcenterComponent implements OnInit {
+  
+  links = LINKS;
+  thumbnailPath = '../../../assets/images/thumbnails/';
 
   constructor() { }
 

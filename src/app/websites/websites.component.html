@@ -1,7 +1,7 @@
 <div class="websites-header">
   <h2 class="websites-header-title">Hasznos linkek</h2>
   <nav class="nav nav-pills flex-column flex-sm-row websites-header-filter">
-    <a class="flex-sm-fill text-sm-center nav-link all-filter" routerLink=".">Mind</a>
+    <a class="flex-sm-fill text-sm-center nav-link all-filter" routerLink="." routerLinkActive="active-all-filter">Összes</a>
     <a class="flex-sm-fill text-sm-center nav-link" routerLink="./reception" routerLinkActive="active-filter">Recepció</a>
     <a class="flex-sm-fill text-sm-center nav-link" routerLink="./administration" routerLinkActive="active-filter">Adminisztráció</a>
     <a class="flex-sm-fill text-sm-center nav-link" routerLink="./management" routerLinkActive="active-filter">Vezetőség</a>
@@ -10,6 +10,25 @@
   </nav>
 </div>
 
+<div class="row link-list" *ngIf="router.url === '/websites'">
+  <ng-container *ngFor="let link of links">
+    <div class="col" >
+      <div class="card text-center link-card">
+        <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
+        <div class="card-body">
+          <h5 class="card-title">{{link.name}}</h5>
+          <a href="{{link.url}}" target="_blank" class="btn link-open">Megnyitás</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  </div>
+  
+  
+
+<router-outlet></router-outlet>
+
+<!-- 
 <div class="row link-list" *ngIf="router.url === '/websites'">
   <div class="col" *ngFor="let link of links">
     <div class="card text-center link-card">
@@ -20,14 +39,5 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<router-outlet></router-outlet>
-<!-- 
-<ul *ngIf="router.url === '/websites'">
-  <li *ngFor="let link of links">
-    <span class="badge"></span> {{link.name}}
-    <img src="{{thumbnailPath}}{{link.image}}" alt="">
-    <a href="{{link.url}}">dd</a>
-  </li>
-</ul> -->
