@@ -1,0 +1,28 @@
+.alert {
+  background-color: rgba(35, 58, 56, .95) !important;
+  color: white;
+}
+.not-found {
+  width: 80% !important;
+  margin: 0 auto 0 auto;
+  font-weight: bold !important;
+}
+
+.not-found i {
+  color: rgba(240, 192, 109, 1);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.not-found a {
+  color: rgba(240, 192, 109, 1);
+}
+
+#contact-text {
+  font-size: 90%;
+  font-style: italic;
+}
+
+#not-found-page {
+  text-decoration: underline ;
+}

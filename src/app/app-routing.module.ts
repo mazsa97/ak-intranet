@@ -7,6 +7,7 @@ import { AdministrationComponent } from "./websites/administration/administratio
 import { ManagementComponent } from "./websites/management/management.component";
 import { CallcenterComponent } from "./websites/callcenter/callcenter.component";
 import { ItComponent } from "./websites/it/it.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
 
 const routes: Routes = [
   { 
@@ -36,8 +37,12 @@ const routes: Routes = [
       {
         path: 'it',
         component: ItComponent,
-      }
-    ], 
+      },
+    ],
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   }
 ];
 
