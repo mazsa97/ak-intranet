@@ -43,7 +43,7 @@ body {
   background-color: rgba(35, 58, 56) !important;
 }
 
-
+/* Media queries */
 @media only screen and (max-width: 768px) {
   .link-card {
     width: 150px;
@@ -62,5 +62,26 @@ body {
   .small-url {
     display: none;
   }
-  
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(35, 58, 56, .95);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(240, 192, 109, .85);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 192, 109, 1);
 }
