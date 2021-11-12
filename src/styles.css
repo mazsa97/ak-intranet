@@ -45,11 +45,11 @@ body {
 
 @media only screen and (max-width: 768px) {
   .link-card {
-    width: 200px;
+    width: 150px;
   }
   .link-thumbnail {
-    width: 195px;
-    height: 95px;
+    width: 145px;
+    height: 80px;
   }
   
 }

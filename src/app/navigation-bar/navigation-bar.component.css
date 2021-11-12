@@ -15,7 +15,11 @@
 }
 
 .navigation-bar li:hover {
-  background-color: rgba(240, 192, 109, .5)
+  background-color: rgba(240, 192, 109, .5);
+}
+
+.active-navbar-element {
+  background-color: rgba(240, 192, 109, .5);
 }
 
 .navigation-timer {
