@@ -1,20 +1,9 @@
 <h3 class="text-center">Recepció</h3>
 
-<!-- <div class="row link-list">
-  <div class="col" *ngFor="let link of links">
-    <div class="card text-center link-card" *ngIf="link.category == 'reception'">
-      <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
-      <div class="card-body">
-        <h5 class="card-title">{{link.name}}</h5>
-        <a href="{{link.url}}" target="_blank" class="btn link-open">Megnyitás</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <div class="row link-list">
   <ng-container *ngFor="let link of links">
-    <div class="col" *ngIf="link.category == 'reception'">
+    <!-- <div class="col" *ngIf="link.category == 'reception'"> -->
+      <div class="col" *ngIf="link.category.includes('reception')">
       <div class="card text-center link-card">
         <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
         <div class="card-body">
