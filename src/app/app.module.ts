@@ -8,13 +8,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { WebsitesComponent } from './websites/websites.component';
+import { ReceptionComponent } from './websites/reception/reception.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
     WelcomeComponent,
-    WebsitesComponent
+    WebsitesComponent,
+    ReceptionComponent
   ],
   imports: [
     BrowserModule,
