@@ -29,6 +29,10 @@
   border: 1px solid rgba(240, 192, 109, 1) !important;
 }
 
+.small-url {
+  color: lightgray !important;
+}
+
 .websites-header-filter .all-filter {
   color: rgba(35, 58, 56) !important;
   background-color: rgba(220, 192, 109, 1) !important;
