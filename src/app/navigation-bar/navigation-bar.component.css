@@ -63,3 +63,13 @@ filter: brightness(0) invert(1);
     width: 45px;
   }
 }
+
+@media only screen and (max-width: 355px) {
+  .navigation-bar {
+    width: 50px !important;
+    font-size: 10px !important;
+  }
+  .navbar-logo {
+    width: 25px;
+  }
+}

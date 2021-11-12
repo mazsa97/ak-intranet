@@ -33,10 +33,51 @@
   background-color: rgba(220, 192, 109, .8) !important;
 }
 
+.link-card {
+  background-color: rgba(35, 58, 56, .9) !important;
+  color: white !important;
+  width: 350px;
+  margin: 15px auto 15px auto !important;
+  transition: all .4s;
+}
+
+.link-card:hover {
+  transform: scale(1.05) !important;
+}
+
+.link-thumbnail {
+  width: 340px;
+  height: 180px;
+  margin: 5px auto 5px auto;
+  border-radius: 5px;
+}
+
+.link-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-open {
+  background-color: rgba(240, 192, 109, 1) !important;
+  color: rgba(35, 58, 56) !important;
+}
+
+.link-open:hover {
+  color: rgba(240, 192, 109, 1) !important;
+  background-color: rgba(35, 58, 56) !important;
+}
+
 @media only screen and (max-width: 768px) {
   .websites-header-filter {
     font-size: 13px !important;
-    
     margin: 1px 3.5px 1px 3.5px !important;
   }
+  .link-card {
+    width: 200px;
+  }
+  .link-thumbnail {
+    width: 195px;
+    height: 95px;
+  }
+  
 }

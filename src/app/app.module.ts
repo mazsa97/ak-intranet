@@ -9,6 +9,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { WebsitesComponent } from './websites/websites.component';
 import { ReceptionComponent } from './websites/reception/reception.component';
+import { AdministrationComponent } from './websites/administration/administration.component';
+import { ManagementComponent } from './websites/management/management.component';
+import { CallcenterComponent } from './websites/callcenter/callcenter.component';
+import { ItComponent } from './websites/it/it.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ReceptionComponent } from './websites/reception/reception.component';
     NavigationBarComponent,
     WelcomeComponent,
     WebsitesComponent,
-    ReceptionComponent
+    ReceptionComponent,
+    AdministrationComponent,
+    ManagementComponent,
+    CallcenterComponent,
+    ItComponent
   ],
   imports: [
     BrowserModule,
