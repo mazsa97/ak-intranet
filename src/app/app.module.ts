@@ -16,6 +16,7 @@ import { ItComponent } from './websites/it/it.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TopButtonComponent } from './top-button/top-button.component';
 import { IdleScreenComponent } from './idle-screen/idle-screen.component';
+import { TelephoneExtensionsComponent } from './telephone-extensions/telephone-extensions.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { IdleScreenComponent } from './idle-screen/idle-screen.component';
     ItComponent,
     NotFoundComponent,
     TopButtonComponent,
-    IdleScreenComponent
+    IdleScreenComponent,
+    TelephoneExtensionsComponent
   ],
   imports: [
     BrowserModule,

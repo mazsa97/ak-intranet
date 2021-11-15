@@ -1,0 +1,25 @@
+<h2 class="text-center">Telefon mellékek</h2>
+
+<table class="table table-sm table-hover table-extensions">
+  <thead>
+    <tr>
+      <th scope="col">Név</th>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr> -->
+<ng-container *ngFor="let extension of extensions">
+  <tr>
+    <th scope="row">{{extension.name}}</th>
+    <td class="extension-column">{{extension.number}}</td>
+  </tr>
+</ng-container>
+
+  </tbody>
+</table>

@@ -13,7 +13,7 @@ body {
 
 router-outlet + * {
   display: block;
-  animation: router-fade .25s ease-out;
+  animation: router-fade .3s ease-out;
 }
 
 .link-card {

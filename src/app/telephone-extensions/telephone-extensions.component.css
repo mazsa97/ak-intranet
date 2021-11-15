@@ -1,0 +1,18 @@
+.table-extensions {
+  margin-bottom: 75px;
+}
+
+.table-extensions thead tr {
+  background-color: rgb(35, 58, 56);  
+  color: rgb(240, 192, 109) !important;
+}
+
+.table-extensions tr {
+  background-color: rgba(35, 58, 56, .5); 
+  color: white;
+  border: none;
+}
+
+.extension-column {
+  font-weight: bold;
+}

@@ -8,11 +8,16 @@ import { ManagementComponent } from "./websites/management/management.component"
 import { CallcenterComponent } from "./websites/callcenter/callcenter.component";
 import { ItComponent } from "./websites/it/it.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
+import { TelephoneExtensionsComponent } from "./telephone-extensions/telephone-extensions.component";
 
 const routes: Routes = [
   { 
     path: '', 
     component: WelcomeComponent 
+  },
+  { 
+    path: 'telephone', 
+    component: TelephoneExtensionsComponent 
   },
   { 
     path: 'websites', 
@@ -47,7 +52,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{
+    scrollPositionRestoration: 'top'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

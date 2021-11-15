@@ -9,7 +9,6 @@ declare var $:any;
 export class AppComponent {
   title = 'ak-intranet';
 }
-
 // Bootstrap tooltip function
 $(function () {
 $('[data-bs-toggle="tooltip"]').tooltip();
