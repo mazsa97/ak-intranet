@@ -1,3 +1,6 @@
+/* Global stylesheet */
+
+/* Font Family */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 :not(i){
@@ -6,6 +9,11 @@
 
 body {
   background-color: rgba(240, 192, 109, .25);
+}
+
+router-outlet + * {
+  display: block;
+  animation: router-fade .25s ease-out;
 }
 
 .link-card {
@@ -61,6 +69,17 @@ body {
   }
   .small-url {
     display: none;
+  }
+}
+
+/* Animations */
+
+@keyframes router-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

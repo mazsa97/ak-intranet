@@ -11,9 +11,11 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    window.setInterval( () => {
-      this.time = new Date()
-    }, 1000);
+    
+    // Interval for the navigation bar clock (every 1 seconds)
+    // window.setInterval( () => {
+    //   this.time = new Date()
+    // }, 1000);
   }
 
 }

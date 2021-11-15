@@ -21,6 +21,7 @@ export class WebsitesComponent implements OnInit {
 
   ngOnInit(): void { }
   
+  // Hide "All" filter button when no filter is selected
   checkFilter() {
     if (this.router.url == "/websites") {
       $('.all-filter').hide();

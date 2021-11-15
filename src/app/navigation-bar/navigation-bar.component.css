@@ -49,6 +49,12 @@
 filter: brightness(0) invert(1);
 }
 
+.navbar-copyright {
+  text-align: center;
+  font-size: 9px;
+  color: white;
+}
+
 .modal-header, .modal-body {
   color: white;
   background-color: rgba(35, 58, 56, .9) !important;

@@ -14,6 +14,8 @@ import { ManagementComponent } from './websites/management/management.component'
 import { CallcenterComponent } from './websites/callcenter/callcenter.component';
 import { ItComponent } from './websites/it/it.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TopButtonComponent } from './top-button/top-button.component';
+import { IdleScreenComponent } from './idle-screen/idle-screen.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ManagementComponent,
     CallcenterComponent,
     ItComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TopButtonComponent,
+    IdleScreenComponent
   ],
   imports: [
     BrowserModule,

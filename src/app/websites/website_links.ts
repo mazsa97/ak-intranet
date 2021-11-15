@@ -1,3 +1,5 @@
+// All link object in one file
+
 export interface Links {
   name: string;
   category: string;
@@ -127,3 +129,17 @@ export const LINKS: Links[] = [
     image: 'statusz.png' 
   },
 ];
+
+// Sorting the LINKS array
+LINKS.sort(compareNames);
+
+// Function for comparing names
+function compareNames(a: any, b: any) {
+  if ( a.name < b.name ){
+    return -1;
+  }
+  if ( a.name > b.name ){
+    return 1;
+  }
+  return 0;
+}
