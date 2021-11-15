@@ -7,9 +7,14 @@
     <div class="modal-content">
       <div class="modal-body">
           <img src="../../assets/images/AK_logo_welcome.png" alt="AK-logo" class="idle-logo">
-          <div class="idle-timer" role="alert">{{time | date:'yyyy/M/d'}} - {{time | date:'H:mm:ss'}}</div>
-          <h3>Ön már 5 perce inaktív!</h3>
-          <small>Nyomjon meg egy gombot, vagy mozgassa meg a kurzort az ablak bezárásához!</small>
+          <div class="idle-timer">{{time | date:'yyyy/M/d'}} - {{time | date:'H:mm:ss'}}</div>
+          <!-- <h2>Az ön képernyője inaktivitás miatt jelenleg inaktív!</h2>
+          <small>Nyomjon meg egy gombot, vagy mozgassa meg a kurzort az ablak bezárásához!</small> -->
+          <div class="alert alert-light inactive-alert w-75" role="alert">
+            <h2>A képernyő inaktivitás miatt jelenleg inaktív!</h2>
+            <hr>
+            <small>Nyomjon meg egy gombot, vagy mozgassa meg a kurzort az ablak bezárásához!</small>
+          </div>
       </div>
     </div>
   </div>
