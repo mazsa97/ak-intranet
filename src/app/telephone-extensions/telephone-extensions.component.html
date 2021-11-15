@@ -1,6 +1,13 @@
 <h2 class="text-center">Telefon mellékek</h2>
 
-<table class="table table-sm table-hover table-extensions">
+<div class="input-group rounded">
+  <input type="text" class="form-control rounded" id="myInput" (input)="searchFields()" placeholder="Keresés.." />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fa fa-search"></i>
+  </span>
+</div>
+<br>
+<table class="table table-sm table-hover table-extensions" id="extension-table">
   <thead>
     <tr>
       <th scope="col">Név</th>
@@ -16,10 +23,13 @@
     </tr> -->
 <ng-container *ngFor="let extension of extensions">
   <tr>
-    <th scope="row">{{extension.name}}</th>
+    <td scope="row">{{extension.name}}</td>
     <td class="extension-column">{{extension.number}}</td>
   </tr>
 </ng-container>
+<tr class="no-results">
+  <td colspan="2" class="text-center">Nincs ilyen mellék...</td>
+</tr>
 
   </tbody>
 </table>

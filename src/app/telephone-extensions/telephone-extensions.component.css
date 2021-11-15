@@ -16,3 +16,7 @@
 .extension-column {
   font-weight: bold;
 }
+
+.no-results {
+  display: none;
+}

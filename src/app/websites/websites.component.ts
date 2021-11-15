@@ -14,20 +14,39 @@ export class WebsitesComponent implements OnInit {
   thumbnailPath = 'assets/images/thumbnails/';
 
   constructor(public router: Router) {
-    router.events.subscribe((val) =>
-      this.checkFilter()
-    );
+    // router.events.subscribe((val) =>
+    //   this.checkFilter()
+    // );
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    // $(window).resize(function(){
+    // 
+    //     if($(window).width() <= 767){
+    //       $('.blue').removeClass('blue');
+    //     }  else {
+    //           $('#.link-list div').removeClass('col');
+    //       }
+    // 
+    //   });
+  }
   
   // Hide "All" filter button when no filter is selected
-  checkFilter() {
-    if (this.router.url == "/websites") {
-      $('.all-filter').hide();
-    } else {
-      $('.all-filter').show();
-    }
-  }
-
+  // checkFilter() {
+  //   if (this.router.url == "/websites") {
+  //     $('.all-filter').hide();
+  //   } else {
+  //     $('.all-filter').show();
+  //   }
+  // }
+  
+  // checkWidth() {
+  //   if ($(window).width() > 768) {
+  //       $('.link-list div').addClass('col');
+  //   } else {
+  //       $('#.link-list div').removeClass('col');
+  //   }
 }
+
+
+
