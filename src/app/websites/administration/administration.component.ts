@@ -9,7 +9,7 @@ import { LINKS } from "../website_links";
 export class AdministrationComponent implements OnInit {
   
   links = LINKS;
-  thumbnailPath = '../../../assets/images/thumbnails/';
+  thumbnailPath = 'assets/images/thumbnails/';
 
   constructor() { }
 

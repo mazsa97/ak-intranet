@@ -29,7 +29,7 @@ export const LINKS: Links[] = [
   { 
     name: 'Beosztás', 
     category: 'reception', 
-    url: 'https://docs.google.com/spreadsheets/d/1ATxiMKIhZFsU8usnHZ8wEDmCk9UTBh3Hwn_ZM21s-Fo/edit#gid=1583717264', 
+    url: 'https://tinyurl.com/ak-beosztas', 
     image: 'beosztas.png' 
   },
   { 

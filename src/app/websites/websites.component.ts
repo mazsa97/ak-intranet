@@ -11,7 +11,7 @@ declare var $ :any;
 export class WebsitesComponent implements OnInit {
   
   links = LINKS;
-  thumbnailPath = '../../assets/images/thumbnails/';
+  thumbnailPath = 'assets/images/thumbnails/';
 
   constructor(public router: Router) {
     router.events.subscribe((val) =>
