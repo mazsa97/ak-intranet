@@ -8,7 +8,8 @@ declare var $: any;
 })
 export class IdleScreenComponent implements OnInit {
   time = new Date();
-  idleTime: any = 5000;
+  // 2 minutes in milliseconds
+  idleTime: any = 120000;
 
   constructor() { }
 
