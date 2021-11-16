@@ -64,9 +64,11 @@ router-outlet + * {
     font-size: smaller;
   }
   .link-thumbnail {
-    width: 150px;
-    height: 100px; 
+    /* width: 150px;
+    height: 100px;  */
     /* display: none; */
+    width: 95%;
+    max-height: 125px;
   }
   .small-url {
     /* display: none; */
