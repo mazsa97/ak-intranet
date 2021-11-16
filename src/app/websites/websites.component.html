@@ -12,7 +12,7 @@
 
 <div class="row link-list" *ngIf="router.url === '/websites'">
   <ng-container *ngFor="let link of links">
-    <div class="col" >
+    <div class="col-md" >
       <div class="card text-center link-card">
         <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
         <div class="card-body">

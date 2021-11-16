@@ -19,7 +19,7 @@ router-outlet + * {
 .link-card {
   background-color: rgba(35, 58, 56, .9) !important;
   color: white !important;
-  width: 350px;
+  /* width: 350px; */
   margin: 15px auto 15px auto !important;
   transition: all .4s;
 }
@@ -51,11 +51,15 @@ router-outlet + * {
   background-color: rgba(35, 58, 56) !important;
 }
 
+.small-url {
+  color: lightgray !important;
+}
+
 /* Media queries */
 @media only screen and (max-width: 768px) {
   .link-card {
     /* width: 150px; */
-    width: 100% !important;
+    /* width: 100% !important; */
   }
   .card-title {
     font-size: smaller;
@@ -68,7 +72,7 @@ router-outlet + * {
     height: 100px;  */
     /* display: none; */
     width: 95%;
-    max-height: 125px;
+    height: auto;
   }
   .small-url {
     /* display: none; */

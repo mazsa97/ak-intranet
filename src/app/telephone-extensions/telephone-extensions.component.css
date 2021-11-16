@@ -20,3 +20,8 @@
 .no-results {
   display: none;
 }
+
+#search-addon {
+  background-color: rgb(35, 58, 56);  
+  color: rgb(240, 192, 109);
+}
