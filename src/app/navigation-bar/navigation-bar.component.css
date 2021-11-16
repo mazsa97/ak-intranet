@@ -32,7 +32,7 @@
 }
 
 .navigation-bar i {
-  color: white !important;
+  color: rgba(240, 192, 109, .75) !important;
 }
 
 .navigation-bar a{
@@ -45,8 +45,21 @@
   background-color: rgba(240, 192, 109, .5);
 }
 
+.navigation-bar li:hover i {
+  color: rgba(35, 58, 56, .8) !important;
+}
+
 .active-navbar-element {
   background-color: rgba(240, 192, 109, .5);
+}
+
+.active-navbar-element i {
+  color: rgba(35, 58, 56, .8) !important;
+}
+
+.active-navbar-mobile-element {
+  background-color: rgba(240, 192, 109, .5);
+  color: red !important
 }
 
 .navigation-timer {
@@ -79,11 +92,11 @@
 }
 
 a:hover .navbar-logo {
-filter: brightness(0) invert(1);
+filter: brightness(.75);
 }
 
 a:hover .navbar-logo-mobile {
-filter: brightness(0) invert(1);
+filter: brightness(.75);
 }
 
 .navbar-copyright {
@@ -111,7 +124,7 @@ filter: brightness(0) invert(1);
 
 .mobile-item:hover a {
   color: rgb(35, 58, 56) !important;
-  background-color: rgba(240, 192, 109, 1) !important;
+  background-color: rgba(240, 192, 109, .5) !important;
 }
 
 @media only screen and (max-width: 768px) {
