@@ -43,6 +43,7 @@
 
 .navigation-bar li:hover {
   background-color: rgba(240, 192, 109, .5);
+  transition: all .25s;
 }
 
 .navigation-bar li:hover i {
@@ -59,7 +60,7 @@
 
 .active-navbar-mobile-element {
   background-color: rgba(240, 192, 109, .5);
-  color: red !important
+  font-style: italic;
 }
 
 .navigation-timer {
