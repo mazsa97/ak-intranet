@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+declare var $: any;
 
 @Component({
   selector: 'app-navigation-bar',
@@ -8,10 +10,18 @@ import { Router } from '@angular/router';
 })
 export class NavigationBarComponent implements OnInit {
   time = new Date();
-  constructor(public router: Router) { }
+  routeChange;
+  constructor(public router: Router) { 
+    this.routeChange = router.events
+      .pipe(
+        filter((event): event is NavigationEnd => event instanceof NavigationEnd)
+      )
+      .subscribe(event => {
+        $('.navbar-toggler').collapse();
+      });
+  }
 
   ngOnInit(): void {
-  
   }
 
 }
