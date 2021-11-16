@@ -1,9 +1,17 @@
+.extensions-header {
+  background-color: rgba(35, 58, 56, .9) !important;
+  color: rgba(240, 192, 109, .9);
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px !important;
+  margin-bottom: 25px !important;
+}
+
 .table-extensions {
   margin-bottom: 75px;
 }
 
 .table-extensions thead tr {
-  background-color: rgb(35, 58, 56);  
+  background-color: rgba(35, 58, 56, .9) !important; 
   color: rgb(240, 192, 109) !important;
 }
 
