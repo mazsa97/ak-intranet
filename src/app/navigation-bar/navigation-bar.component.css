@@ -1,12 +1,13 @@
 .navigation-bar {
   height: 100% !important;
   position:  fixed !important;
-  width: 100px !important;
+  width: 75px !important;
   background-color: rgb(35, 58, 56) !important;
 }
 
 .navigation-bar-mobile {
   background-color: rgb(35, 58, 56) !important;
+  padding: 0;
   display: none !important;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .navbar-logo {
-  width: 50px;
+  width: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +85,9 @@
 }
 
 .navbar-logo-mobile {
-  width: 50px;
+  width: 40px;
+  /* padding: 0; */
+  padding-top: 2.5px;
   transition: all .25s;
 }
 
