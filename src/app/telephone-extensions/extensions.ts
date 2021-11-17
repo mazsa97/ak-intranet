@@ -1,4 +1,4 @@
-// All link object in one file
+// Telephone extensions 
 
 export interface Extensions {
   name: string;
@@ -173,19 +173,19 @@ export const EXTENSIONS: Extensions[] = [
   { 
     name: 'Lakás Konyha',
     number: 291
-  },
+  }
 ];
 
-// Sorting the LINKS array
-// LINKS.sort(compareNames);
-// 
-// // Function for comparing names
-// function compareNames(a: any, b: any) {
-//   if ( a.name < b.name ){
-//     return -1;
-//   }
-//   if ( a.name > b.name ){
-//     return 1;
-//   }
-//   return 0;
-// }
+// Sort array by nr.
+EXTENSIONS.sort(compareNames);
+
+// Function for comparing numbers
+function compareNames(a: any, b: any) {
+  if ( a.number < b.number ){
+    return -1;
+  }
+  if ( a.number > b.number ){
+    return 1;
+  }
+  return 0;
+}

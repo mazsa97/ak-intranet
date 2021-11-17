@@ -11,26 +11,18 @@
 <table class="table table-sm table-hover table-extensions" id="extension-table">
   <thead>
     <tr>
-      <th scope="col">Név</th>
+      <th scope="col">Mellék</th>
       <th scope="col">#</th>
     </tr>
   </thead>
   <tbody>
-    <!-- <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr> -->
+    
+    
 <ng-container *ngFor="let extension of extensions">
   <tr>
     <td scope="row">{{extension.name}}</td>
     <td class="extension-column">{{extension.number}}</td>
   </tr>
 </ng-container>
-<tr class="no-results">
-  <td colspan="2" class="text-center">Nincs ilyen mellék...</td>
-</tr>
-
   </tbody>
 </table>
