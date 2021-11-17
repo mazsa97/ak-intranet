@@ -22,8 +22,7 @@ export class TopButtonComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
   
   // Top of page function
   toTop() {

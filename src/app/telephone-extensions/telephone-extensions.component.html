@@ -15,14 +15,12 @@
       <th scope="col">#</th>
     </tr>
   </thead>
-  <tbody>
-    
-    
-<ng-container *ngFor="let extension of extensions">
-  <tr>
-    <td scope="row">{{extension.name}}</td>
-    <td class="extension-column">{{extension.number}}</td>
-  </tr>
-</ng-container>
+  <tbody>  
+    <ng-container *ngFor="let extension of extensions">
+      <tr>
+        <td scope="row">{{extension.name}}</td>
+        <td class="extension-column">{{extension.number}}</td>
+      </tr>
+    </ng-container>
   </tbody>
 </table>

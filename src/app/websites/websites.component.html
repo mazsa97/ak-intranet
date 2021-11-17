@@ -10,6 +10,7 @@
   </nav>
 </div>
 
+<!-- All links if route is /websites -->
 <div class="row link-list" *ngIf="router.url === '/websites'">
   <ng-container *ngFor="let link of links">
     <div class="col-md" >
@@ -26,20 +27,6 @@
   </ng-container>
   </div>
   
-  
-
+<!-- Router to filtering links -->
 <router-outlet></router-outlet>
-
-<!-- 
-<div class="row link-list" *ngIf="router.url === '/websites'">
-  <div class="col" *ngFor="let link of links">
-    <div class="card text-center link-card">
-      <img class="card-img-top link-thumbnail" src="{{thumbnailPath}}{{link.image}}" alt="{{link.name}}">
-      <div class="card-body">
-        <h5 class="card-title">{{link.name}}</h5>
-        <a href="{{link.url}}" target="_blank" class="btn link-open">Megnyitás</a>
-      </div>
-    </div>
-  </div>
-</div> -->
 
