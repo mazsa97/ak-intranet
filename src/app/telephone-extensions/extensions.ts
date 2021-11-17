@@ -67,7 +67,7 @@ export const EXTENSIONS: Extensions[] = [
     number: 221
   },
   { 
-    name: 'Kiss Recepció Csoport',
+    name: 'Kis Recepció Csoport',
     number: 301
   },
   { 
