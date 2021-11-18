@@ -28,7 +28,6 @@ export class IdleScreenComponent implements OnInit {
     }, 1000);
   }
   
-  
  setIdleTimeout(millis: any, onIdle: any, onUnidle: any) {
     // Variable for how long is the user inactive
     let timeout: any = 0;

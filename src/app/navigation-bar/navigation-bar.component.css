@@ -38,7 +38,6 @@
 
 .navigation-bar a{
   border-bottom: 1px solid rgba(240, 192, 109, .25) !important;
-  /* border: none !important; */
   padding: 15px !important;
 }
 
@@ -110,7 +109,7 @@ filter: brightness(.75);
 }
 
 .modal-header, .modal-body {
-  color: white;
+  color: rgba(240, 192, 109, 1) !important;
   background-color: rgba(35, 58, 56, .9) !important;
 }
 
@@ -131,13 +130,15 @@ filter: brightness(.75);
   background-color: rgba(240, 192, 109, .5) !important;
 }
 
+.accordion-button:focus {
+  border-color: none !important;
+}
+
 @media only screen and (max-width: 768px) {
   .navigation-bar {
-    /* width: 55px !important; */
     display: none !important;
   }
   .navigation-bar-mobile {
-    /* width: 55px !important; */
     display: block !important;
   }
   .navbar-logo {
