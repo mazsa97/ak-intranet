@@ -13,8 +13,7 @@ export class TelephoneExtensionsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   searchFields() {
     // Declare variables
@@ -37,7 +36,5 @@ export class TelephoneExtensionsComponent implements OnInit {
         }
       }
     }
-
   }
-
 }

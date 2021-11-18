@@ -10,15 +10,15 @@ declare var $ :any;
 })
 export class WebsitesComponent implements OnInit {
   
-  links = LINKS;
-  thumbnailPath = 'assets/images/thumbnails/';
+  links: any = LINKS;
+  thumbnailPath: string = 'assets/images/thumbnails/';
+  currentUrl: string = '/websites';
 
   constructor(public router: Router) {
     // Check on router change if the "all filter" should be visible or not
     router.events.subscribe((val) =>
       this.checkFilter()
     );
-    
   }
 
   ngOnInit(): void { }
@@ -31,7 +31,6 @@ export class WebsitesComponent implements OnInit {
       $('.all-filter').show();
     }
   }
-
 }
 
 

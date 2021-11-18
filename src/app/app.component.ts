@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from "@angular/platform-browser";
 import { Router, NavigationEnd, ActivatedRoute } from "@angular/router";
 import { filter, map } from 'rxjs/operators';
@@ -11,7 +11,7 @@ declare var $: any;
 })
 export class AppComponent {
 
-  title: string = 'Aranyklinika';
+  title: string = 'Aranyklinika Intranet';
 
   constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) { }
 
@@ -30,11 +30,9 @@ export class AppComponent {
           return appTitle;
         })
       ).subscribe((ttl: string) => {
-        this.titleService.setTitle(ttl + " « " + this.title);
+        this.titleService.setTitle(ttl + " › " + this.title);
       });
-
   }
-
 }
 
 // Bootstrap tooltip function
@@ -42,7 +40,7 @@ $(function() {
   $('[data-bs-toggle="tooltip"]').tooltip();
 })
 
-// Hide tooltip after route change
+// Hide tooltip after clicking on it, preventing tooltip staying active on the screen
 $(document).ready(function() {
   $('[data-bs-toggle="tooltip"]').click(function() {
     $('[data-bs-toggle="tooltip"]').tooltip("hide");

@@ -24,9 +24,8 @@ export class TopButtonComponent implements OnInit {
 
   ngOnInit(): void { }
   
-  // Top of page function
+  // Function to scroll back to the top of page
   toTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
 }

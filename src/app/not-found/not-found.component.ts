@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent implements OnInit {
-  
-    currentPage: string = decodeURIComponent(window.location.pathname.substring(1));
 
   constructor() { }
 

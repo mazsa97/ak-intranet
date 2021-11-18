@@ -1,4 +1,4 @@
-// All link object in one file
+// Website link objects
 
 export interface Links {
   name: string;

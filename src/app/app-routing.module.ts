@@ -15,7 +15,7 @@ const routes: Routes = [
     path: '',
     component: WelcomeComponent,
     data: {
-      title: "Intranet"
+      title: "Főoldal"
     }
   },
   {
