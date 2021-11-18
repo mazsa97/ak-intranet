@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Title } from "@angular/platform-browser";
+import { Router, NavigationEnd, ActivatedRoute } from "@angular/router";
+import { filter, map } from 'rxjs/operators';
 declare var $:any;
 
 @Component({
@@ -7,8 +10,32 @@ declare var $:any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ak-intranet';
+  title: string = 'Aranyklinika';
+  
+  constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) { }
+  
+  ngOnInit(): void {
+    
+    // Dynamic page titles
+    const appTitle = this.titleService.getTitle();
+    this.router
+      .events.pipe(
+        filter(event => event instanceof NavigationEnd),
+        map(() => {
+          const child = this.activatedRoute.firstChild;
+          if (child!.snapshot.data['title']) {
+            return child!.snapshot.data['title'];
+          }
+          return appTitle;
+        })
+      ).subscribe((ttl: string) => {
+        this.titleService.setTitle(ttl + " « " + this.title);
+      });
+    
+  }
+  
 }
+
 // Bootstrap tooltip function
 $(function () {
 $('[data-bs-toggle="tooltip"]').tooltip();

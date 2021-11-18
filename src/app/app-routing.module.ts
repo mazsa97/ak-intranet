@@ -11,17 +11,26 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { TelephoneExtensionsComponent } from "./telephone-extensions/telephone-extensions.component";
 
 const routes: Routes = [
-  { 
-    path: '', 
-    component: WelcomeComponent 
+  {
+    path: '',
+    component: WelcomeComponent,
+    data: {
+      title: "Intranet"
+    }
   },
-  { 
-    path: 'telephone', 
-    component: TelephoneExtensionsComponent 
+  {
+    path: 'telephone',
+    component: TelephoneExtensionsComponent,
+    data: {
+      title: "Mellékek"
+    }
   },
-  { 
-    path: 'websites', 
+  {
+    path: 'websites',
     component: WebsitesComponent,
+    data: {
+      title: "Linkek"
+    },
     children: [
       {
         path: 'reception',
@@ -51,12 +60,15 @@ const routes: Routes = [
   },
   {
     path: '404',
-    component: NotFoundComponent
+    component: NotFoundComponent,
+    data: {
+      title: "404"
+    }
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
+  imports: [RouterModule.forRoot(routes, {
     scrollPositionRestoration: 'top'
   })],
   exports: [RouterModule]
