@@ -10,7 +10,6 @@ export interface Links {
 export const LINKS: Links[] = [
   { 
     name: 'E-rendelő', 
-    // category: 'reception, administration, management, callcenter, it', 
     category: ['reception', 'administration', 'management', 'callcenter', 'it'], 
     url: 'https://lddsystems.eu/rendelo/', 
     image: 'assets/images/thumbnails/e_rendelo.png' 
