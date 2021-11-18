@@ -12,121 +12,121 @@ export const LINKS: Links[] = [
     name: 'E-rendelő', 
     category: 'reception, administration, management, callcenter, it', 
     url: 'https://lddsystems.eu/rendelo/', 
-    image: 'e_rendelo.png' 
+    image: 'assets/images/thumbnails/e_rendelo.png' 
   },
   { 
     name: 'ERP', 
     category: 'reception, administration, callcenter, it', 
     url: 'http://erp.lddsystems.eu/web/login', 
-    image: 'erp.png' 
+    image: 'assets/images/thumbnails/erp.png' 
   },
   { 
     name: 'Slack', 
     category: 'reception', 
     url: 'http://aranyklinika.slack.com', 
-    image: 'slack.jpg' 
+    image: 'assets/images/thumbnails/slack.jpg' 
   },
   { 
     name: 'Beosztás', 
     category: 'reception', 
     url: 'https://tinyurl.com/ak-beosztas', 
-    image: 'beosztas.png' 
+    image: 'assets/images/thumbnails/beosztas.png' 
   },
   { 
     name: 'Aranyklinika', 
     category: 'reception, callcenter', 
     url: 'https://aranyklinika.hu/', 
-    image: 'aranyklinika.png' 
+    image: 'assets/images/thumbnails/aranyklinika.png' 
   },
   { 
     name: 'Komplexlabor', 
     category: 'reception, callcenter', 
     url: 'https://komplexlabor.hu/', 
-    image: 'komplexlabor.png' 
+    image: 'assets/images/thumbnails/komplexlabor.png' 
   },
   { 
     name: 'GitHub', 
     category: 'administration, management, it', 
     url: 'https://github.com/aranyklinika', 
-    image: 'github.png' 
+    image: 'assets/images/thumbnails/github.png' 
   },
   { 
     name: 'IP Portál', 
     category: 'administration', 
     url: 'https://aranyklinika.ip-telefon.hu/ipportal/', 
-    image: 'ip_portal.png' 
+    image: 'assets/images/thumbnails/ip_portal.png' 
   },
   { 
     name: 'Rextra', 
     category: 'administration', 
     url: 'https://rextra.hu/', 
-    image: 'rextra.png' 
+    image: 'assets/images/thumbnails/rextra.png' 
   },
   { 
     name: 'Fordító', 
     category: 'administration, callcenter', 
     url: 'https://translate.google.com/', 
-    image: 'fordito.png' 
+    image: 'assets/images/thumbnails/fordito.png' 
   },
   { 
     name: 'Paracelsus Humán Medicina', 
     category: 'administration', 
     url: 'https://www.paracelsusmedicina.hu/', 
-    image: 'paracelus.png' 
+    image: 'assets/images/thumbnails/paracelus.png' 
   },
   { 
     name: 'Simple Pay', 
     category: 'administration, management', 
     url: 'https://simplepay.hu/', 
-    image: 'simplepay.png' 
+    image: 'assets/images/thumbnails/simplepay.png' 
   },
   { 
     name: 'NAV', 
     category: 'administration', 
     url: 'https://www.nav.gov.hu/', 
-    image: 'nav.png' 
+    image: 'assets/images/thumbnails/nav.png' 
   },
   { 
     name: 'Számlázz', 
     category: 'administration, management', 
     url: 'https://www.szamlazz.hu/', 
-    image: 'szamlazz.png' 
+    image: 'assets/images/thumbnails/szamlazz.png' 
   },
   { 
     name: 'YNAB', 
     category: 'administration, management', 
     url: 'https://www.youneedabudget.com', 
-    image: 'ynab.png' 
+    image: 'assets/images/thumbnails/ynab.png' 
   },
   { 
     name: 'ÁNTSZ', 
     category: 'management', 
     url: 'https://www.antsz.hu/', 
-    image: 'antsz.png' 
+    image: 'assets/images/thumbnails/antsz.png' 
   },
   { 
     name: 'MEDITOR', 
     category: 'callcenter', 
     url: 'http://www.kopifo.hu/', 
-    image: 'meditor.png' 
+    image: 'assets/images/thumbnails/meditor.png' 
   },
   { 
     name: 'GMAIL', 
     category: 'callcenter, it, management, reception, administration', 
     url: 'https://mail.google.com/', 
-    image: 'gmail.png' 
+    image: 'assets/images/thumbnails/gmail.png' 
   },
   { 
     name: 'LastPass', 
     category: 'it', 
     url: 'https://www.lastpass.com/', 
-    image: 'lastpass.png' 
+    image: 'assets/images/thumbnails/lastpass.png' 
   },
   { 
     name: 'Státusz', 
     category: 'it', 
     url: 'https://status.aranyklinika.hu/', 
-    image: 'statusz.png' 
+    image: 'assets/images/thumbnails/statusz.png' 
   },
 ];
 

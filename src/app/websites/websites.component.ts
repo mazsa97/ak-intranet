@@ -11,7 +11,6 @@ declare var $ :any;
 export class WebsitesComponent implements OnInit {
   
   links: any = LINKS;
-  thumbnailPath: string = 'assets/images/thumbnails/';
   currentUrl: string = '/websites';
 
   constructor(public router: Router) {
