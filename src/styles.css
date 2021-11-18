@@ -57,10 +57,6 @@ router-outlet + * {
 
 /* Media queries */
 @media only screen and (max-width: 768px) {
-  .link-card {
-    /* width: 150px; */
-    /* width: 100% !important; */
-  }
   .card-title {
     font-size: smaller;
   }
@@ -68,19 +64,12 @@ router-outlet + * {
     font-size: smaller;
   }
   .link-thumbnail {
-    /* width: 150px;
-    height: 100px;  */
-    /* display: none; */
     width: 95%;
     height: auto;
-  }
-  .small-url {
-    /* display: none; */
   }
 }
 
 /* Animations */
-
 @keyframes router-fade {
   0% {
     opacity: 0;
