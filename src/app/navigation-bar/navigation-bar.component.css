@@ -152,6 +152,7 @@ filter: brightness(.75);
 
 #help-accordion .accordion-button::after {
 background-color: rgba(240, 192, 109) !important;
+border-radius: 5px;
 }
 
 #help-accordion .accordion-collapse {
