@@ -1,5 +1,5 @@
 {
-  "name": "Intranet - Aranyklinika",
+  "name": "ak-intranet",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
