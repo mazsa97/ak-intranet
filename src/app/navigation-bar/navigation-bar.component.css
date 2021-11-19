@@ -114,12 +114,12 @@ filter: brightness(.75);
 
 .modal-header, .modal-body {
   color: rgba(240, 192, 109, 1) !important;
-  background-color: rgba(35, 58, 56, .9) !important;
+  background-color: rgba(35, 58, 56, 1) !important;
 }
 
 .close {
   cursor: pointer;
-  color: white;
+  color: rgba(240, 192, 109) !important;;
 }
 
 .mobile-item a {
@@ -136,6 +136,28 @@ filter: brightness(.75);
 
 .accordion-button:focus {
   border-color: none !important;
+}
+
+#help-accordion .accordion-item {
+  border: 1px solid rgba(240, 192, 109) !important;
+}
+
+#help-accordion .accordion-button, .accordion-button:focus {
+  background-color: rgb(35, 58, 56) !important;
+  color: rgba(240, 192, 109) !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+#help-accordion .accordion-button::after {
+background-color: rgba(240, 192, 109) !important;
+}
+
+#help-accordion .accordion-collapse {
+  background-color: rgba(240, 192, 109) !important;
+  color: black !important;
+  border-radius: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
