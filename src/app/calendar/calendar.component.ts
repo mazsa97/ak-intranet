@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions } from '@fullcalendar/angular';
 import huLocale from '@fullcalendar/core/locales/hu';
-declare var $: any;
 
 @Component({
   selector: 'app-calendar',
