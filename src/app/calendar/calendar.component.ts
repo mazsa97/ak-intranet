@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+import { CalendarOptions } from '@fullcalendar/angular';
+import huLocale from '@fullcalendar/core/locales/hu';
+declare var $: any;
+
+@Component({
+  selector: 'app-calendar',
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.css']
+})
+export class CalendarComponent implements OnInit {
+  
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth',
+    locale: huLocale
+  };
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

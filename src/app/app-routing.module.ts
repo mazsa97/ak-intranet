@@ -9,6 +9,7 @@ import { CallcenterComponent } from "./websites/callcenter/callcenter.component"
 import { ItComponent } from "./websites/it/it.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { TelephoneExtensionsComponent } from "./telephone-extensions/telephone-extensions.component";
+import { CalendarComponent } from "./calendar/calendar.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,13 @@ const routes: Routes = [
     component: TelephoneExtensionsComponent,
     data: {
       title: "Mellékek"
+    }
+  },
+  {
+    path: 'calendar',
+    component: CalendarComponent,
+    data: {
+      title: "Naptár"
     }
   },
   {

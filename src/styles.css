@@ -69,6 +69,20 @@ router-outlet + * {
   }
 }
 
+/* Calendar styles */
+.intranet-calendar a {
+  color: white;
+}
+
+.intranet-calendar button {
+  background-color: rgb(35, 58, 56) !important;
+  color: rgba(240, 192, 109) !important;
+}
+
+.intranet-calendar .fc-day-today {
+  background-color: rgba(240, 192, 109, .75) !important;
+}
+
 /* Animations */
 @keyframes router-fade {
   0% {
