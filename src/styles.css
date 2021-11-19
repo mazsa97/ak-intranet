@@ -4,7 +4,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 :not(i){
-  font-family: Montserrat !important;
+  font-family: Montserrat !important; /* Set font family excluding the i tag to make font awesome work */
+}
+
+* {
+  scroll-behavior: auto !important; /* Disable smooth scroll on route changes */
 }
 
 body {
@@ -83,7 +87,7 @@ router-outlet + * {
   background-color: rgba(240, 192, 109, .75) !important;
 }
 
-
+/* Media queries */
 @media only screen and (max-width: 768px) {
   .intranet-calendar .fc-toolbar {
     display: inline-block !important;
@@ -101,7 +105,7 @@ router-outlet + * {
   }
 }
 
-/* scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 7.5px;
 }
