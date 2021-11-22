@@ -36,7 +36,7 @@ export class IdleScreenComponent implements OnInit {
     // Function for idle timer
     function startTimer() {
         timeout = setTimeout(onExpires, millis);
-        // Events to listen to
+        // Eventlisteners to listen to
         document.addEventListener("mousemove", onActivity);
         document.addEventListener("keypress", onActivity);
         document.addEventListener("click", onActivity);
@@ -54,12 +54,13 @@ export class IdleScreenComponent implements OnInit {
     function onActivity() {
         if (timeout) clearTimeout(timeout);
         else onUnidle();
-        // Events to remove
+        // Eventlisteners to remove on activity
         document.removeEventListener("mousemove", onActivity);
         document.removeEventListener("keypress", onActivity);
         document.removeEventListener("click", onActivity);
         document.removeEventListener("focus", onActivity);
         document.removeEventListener("scroll", onActivity);
+        // delay timer with 1000 milliseconds
         setTimeout(startTimer, 1000);
     }
   }
