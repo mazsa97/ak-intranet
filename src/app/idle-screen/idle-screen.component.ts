@@ -9,7 +9,7 @@ declare var $: any;
 export class IdleScreenComponent implements OnInit {
   
   time = new Date();
-  idleTime: any = 300000; // 5 minutes in milliseconds
+  idleTime: any = 180000; // 3 minutes in milliseconds
   
   constructor() {
     this.setIdleTimeout(this.idleTime, function() {
@@ -54,12 +54,12 @@ export class IdleScreenComponent implements OnInit {
     function onActivity() {
         if (timeout) clearTimeout(timeout);
         else onUnidle();
-        // Events to listen to
+        // Events to remove
         document.removeEventListener("mousemove", onActivity);
         document.removeEventListener("keypress", onActivity);
-        document.addEventListener("click", onActivity);
-        document.addEventListener("focus", onActivity);
-        document.addEventListener("scroll", onActivity);
+        document.removeEventListener("click", onActivity);
+        document.removeEventListener("focus", onActivity);
+        document.removeEventListener("scroll", onActivity);
         setTimeout(startTimer, 1000);
     }
   }
