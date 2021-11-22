@@ -3,12 +3,14 @@
   position:  fixed !important;
   width: 75px !important;
   background-color: rgb(35, 58, 56) !important;
+  border-right: 1px solid rgba(240, 192, 109) !important;
 }
 
 .navigation-bar-mobile {
   background-color: rgb(35, 58, 56) !important;
   padding: 0;
   display: none !important;
+  border-bottom: 1px solid rgba(240, 192, 109) !important;
 }
 
 .navbar-toggler-mobile {
