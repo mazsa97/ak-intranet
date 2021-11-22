@@ -1,8 +1,8 @@
 # Aranyklinika Intranet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+Useful links, informations etc. for our collegues on our private network only, built with angular.
 
-Useful links, informations etc. for our collegues on our private network only.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
 ## Development server
 
