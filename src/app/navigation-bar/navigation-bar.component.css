@@ -112,11 +112,6 @@ filter: brightness(.75);
   color: white;
 }
 
-.modal-header, .modal-body {
-  color: rgba(240, 192, 109, 1) !important;
-  background-color: rgba(35, 58, 56, 1) !important;
-}
-
 .close {
   cursor: pointer;
   color: rgba(240, 192, 109) !important;
@@ -159,6 +154,15 @@ border-radius: 5px;
   background-color: rgba(240, 192, 109) !important;
   color: black !important;
   border-radius: 0 !important;
+}
+
+#intranet-helper-canvas {
+  color: rgb(240, 192, 109);
+  background-color: rgb(35, 58, 56);
+}
+
+#canvas-close-btn {
+  background-color: rgb(240, 192, 109) !important;
 }
 
 @media only screen and (max-width: 768px) {

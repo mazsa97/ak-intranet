@@ -7,28 +7,28 @@
     </div>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <li class="nav-item">
-        <a routerLink="" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Főoldal">
+        <a routerLink="" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Főoldal">
           <i class="fa fa-lg fa-home"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a routerLink="websites" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Linkek">
+        <a routerLink="websites" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Linkek">
           <i class="fa fa-lg fa-link"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a routerLink="telephone" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Mellékek">
+        <a routerLink="telephone" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Mellékek">
           <i class="fa fa-lg fa-phone"></i>
         </a>
       </li>
       <li class="nav-item">
-        <a routerLink="calendar" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Naptár">
+        <a routerLink="calendar" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Naptár">
           <i class="fa fa-lg fa-calendar"></i>
         </a>
       </li>
       <li class="nav-item navigation-help-button">
         <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Súgó">
-          <a class="nav-link py-3 border-bottom" aria-current="page" title="" data-bs-toggle="modal" data-bs-target="#help-modal">
+          <a class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#intranet-helper-canvas">
             <i class="fa fa-lg fa-question-circle"></i>
           </a>
         </span>
@@ -60,57 +60,52 @@
           <a routerLink="calendar" routerLinkActive="active-navbar-mobile-element" class="nav-link">Naptár</a>
         </li>
         <li class="nav-item mobile-item help">
-          <a class="nav-link" aria-current="page" title="" data-bs-toggle="modal" data-bs-target="#help-modal">Súgó</a>
+          <a class="nav-link" aria-current="page" title="" data-bs-toggle="offcanvas" data-bs-target="#intranet-helper-canvas">Súgó</a>
         </li>
         </ul>
     </div>
   </div>
 </nav>
+
+<!-- Intranet helper canvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="intranet-helper-canvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="intranet-helper-canvasLabel">Intranet súgó</h5>
+    <button type="button" class="btn-close text-reset" id="canvas-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion accordion-flush" id="help-accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+            Linkek
+          </button>
+        </h2>
+        <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#help-accordion">
+          <div class="accordion-body">Az aranyklinika alkalmazottainak hasznos weboldalak elérhetőségei, kategóriákba sorolva.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          Mellékek
+        </button>
+        </h2>
+        <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#help-accordion">
+          <div class="accordion-body">A klinikán belült használt telefonos mellékek táblázatba szedve.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Naptár
+        </button>
+        </h2>
+        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#help-accordion">
+          <div class="accordion-body">Egy egyszerű naptár amelyet gyorsan el lehet érni minden oldalról.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   
-  <!-- Help modal window -->
-<div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="help-modalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="help-modalTitle">Intranet súgó</h2>
-        <i class="fa fa-lg fa-times close" data-bs-dismiss="modal" aria-label="Close"></i>        
-      </div>
-      <div class="modal-body">
-        <h3><u>Az intranet funkciói:</u></h3>
-        <br>
-        <div class="accordion accordion-flush" id="help-accordion">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-        Linkek
-      </button>
-    </h2>
-    <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#help-accordion">
-      <div class="accordion-body">Az aranyklinika alkalmazottainak hasznos weboldalak elérhetőségei, kategóriákba sorolva.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-        Mellékek
-      </button>
-    </h2>
-    <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#help-accordion">
-      <div class="accordion-body">A klinikán belült használt telefonos mellékek táblázatba szedve.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-        Naptár
-      </button>
-    </h2>
-    <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#help-accordion">
-      <div class="accordion-body">Egy egyszerű naptár amelyet gyorsan el lehet érni minden oldalról.</div>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
