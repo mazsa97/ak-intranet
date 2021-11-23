@@ -22,6 +22,11 @@
   margin-right: auto !important;
 }
 
+kbd {
+  background-color: rgb(35, 58, 56);
+  color: rgb(240, 192, 109)
+}
+
 @media only screen and (max-width: 768px) {
   h2 {
     font-size: 20px;

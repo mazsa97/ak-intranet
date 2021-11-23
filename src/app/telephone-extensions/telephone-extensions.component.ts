@@ -36,5 +36,12 @@ export class TelephoneExtensionsComponent implements OnInit {
         }
       }
     }
+    if ($('tr:visible').length <= 1) {
+        $('.no-results').css("display", "block");
+        $('.table-extensions').css("margin-bottom", "5px");
+    } else {
+        $('.no-results').css("display", "none");
+        $('.table-extensions').css("margin-bottom", "75px");
+    }
   }
 }
