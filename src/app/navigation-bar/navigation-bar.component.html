@@ -2,7 +2,7 @@
 <div class="navigation-bar d-flex flex-column flex-shrink-0" style="width: 4.5rem;">
     <div class="navbar-logo-div">
       <a routerLink="" class="d-block p-3 link-dark text-decoration-none" title="AK intranet">
-        <img src="assets/images/AK_logo.png" class="navbar-logo" alt="AK-logo">
+        <img src="assets/images/AK_logo_menu.png" class="navbar-logo" alt="AK-logo">
       </a>
     </div>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
@@ -40,12 +40,12 @@
   <nav class="navigation-bar-mobile navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a routerLink="" class="d-block p-3 link-dark text-decoration-none" title="AK intranet">
-      <img src="assets/images/AK_logo.png" class="navbar-logo-mobile" alt="AK-logo">
+      <img src="assets/images/AK_logo_menu.png" class="navbar-logo-mobile" alt="AK-logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-navbar-content" aria-controls="mobile-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-navbar-content" aria-controls="mobile-navbar-content" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
       <i class="fa fa-lg fa-bars navbar-toggler-mobile"></i>
     </button>
-    <div class="collapse navbar-collapse" id="mobile-navbar-content">
+    <div class="collapse navbar-collapse" id="mobile-navbar-content" [ngClass]="{'show': navbarOpen}">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item mobile-item">
           <a routerLink="" class="nav-link">Főoldal</a>
