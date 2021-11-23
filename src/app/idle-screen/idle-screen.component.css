@@ -23,8 +23,9 @@
 }
 
 kbd {
+  font-size: 80%;
   background-color: rgb(35, 58, 56);
-  color: rgb(240, 192, 109)
+  color: rgb(240, 192, 109);
 }
 
 @media only screen and (max-width: 768px) {
