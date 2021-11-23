@@ -10,13 +10,11 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  title: string = 'Aranyklinika Intranet';
+  title: string = 'Aranyklinika - Intranet';
 
   constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-
     // Dynamic page titles
     const appTitle = this.titleService.getTitle();
     this.router
@@ -44,6 +42,5 @@ $(function() {
 $(document).ready(function() {
   $('[data-bs-toggle="tooltip"]').click(function() {
     $('[data-bs-toggle="tooltip"]').tooltip("hide");
-
   });
 });

@@ -7,7 +7,6 @@ import { LINKS } from "../website_links";
   styleUrls: ['./reception.component.css']
 })
 export class ReceptionComponent implements OnInit {
-  
   links = LINKS;
 
   constructor() { }

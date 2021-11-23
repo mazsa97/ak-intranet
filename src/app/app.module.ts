@@ -17,14 +17,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { TopButtonComponent } from './top-button/top-button.component';
 import { IdleScreenComponent } from './idle-screen/idle-screen.component';
 import { TelephoneExtensionsComponent } from './telephone-extensions/telephone-extensions.component';
-import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
+import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import { CalendarComponent } from './calendar/calendar.component'; // a plugin!
-// import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+import { CalendarComponent } from './calendar/calendar.component';
 
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-  // interactionPlugin
+// Register FullCalendar plugins
+FullCalendarModule.registerPlugins([
+  dayGridPlugin
 ]);
 
 @NgModule({

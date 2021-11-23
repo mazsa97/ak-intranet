@@ -7,7 +7,6 @@ import { LINKS } from "../website_links";
   styleUrls: ['./management.component.css']
 })
 export class ManagementComponent implements OnInit {
-  
   links = LINKS;
 
   constructor() { }

@@ -7,7 +7,6 @@ import { LINKS } from "../website_links";
   styleUrls: ['./callcenter.component.css']
 })
 export class CallcenterComponent implements OnInit {
-  
   links = LINKS;
 
   constructor() { }

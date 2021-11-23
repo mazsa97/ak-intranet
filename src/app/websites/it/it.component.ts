@@ -6,8 +6,7 @@ import { LINKS } from "../website_links";
   templateUrl: './it.component.html',
   styleUrls: ['./it.component.css']
 })
-export class ItComponent implements OnInit {
-  
+export class ItComponent implements OnInit {  
   links = LINKS;
 
   constructor() { }

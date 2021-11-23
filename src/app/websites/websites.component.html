@@ -10,7 +10,7 @@
   </nav>
 </div>
 
-<!-- All links if route is /websites -->
+<!-- All links if the active route is "/websites" -->
 <div class="row link-list" *ngIf="router.url === currentUrl">
   <ng-container *ngFor="let link of links">
     <div class="col-md" >
@@ -27,6 +27,6 @@
   </ng-container>
   </div>
   
-<!-- Router to filtering links -->
+<!-- Router to display only the filtered website links -->
 <router-outlet></router-outlet>
 

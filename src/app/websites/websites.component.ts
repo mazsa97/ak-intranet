@@ -9,7 +9,6 @@ declare var $ :any;
   styleUrls: ['./websites.component.css']
 })
 export class WebsitesComponent implements OnInit {
-  
   links: any = LINKS;
   currentUrl: string = '/websites';
 

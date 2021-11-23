@@ -11,6 +11,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { TelephoneExtensionsComponent } from "./telephone-extensions/telephone-extensions.component";
 import { CalendarComponent } from "./calendar/calendar.component";
 
+// Registered routes of the application
 const routes: Routes = [
   {
     path: '',

@@ -11,6 +11,7 @@ export class TopButtonComponent implements OnInit {
   // Hostlistener for scrolling event
   @HostListener('window:scroll', ['$event.target'])
   
+  // If the user scrolled a 100 pixels the button will be shown in the bottom right corner, otherwise it will be hidden
   scroll(e: any) {
     let scroll = e.scrollingElement.scrollTop;
     if (scroll >= 100) {  // >= 100px

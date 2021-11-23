@@ -8,7 +8,6 @@ declare var $: any;
   styleUrls: ['./telephone-extensions.component.css']
 })
 export class TelephoneExtensionsComponent implements OnInit {
-
   extensions = EXTENSIONS;
 
   constructor() { }
@@ -26,7 +25,6 @@ export class TelephoneExtensionsComponent implements OnInit {
     // Loop through all table rows, and hide those which don't match the search query
     for (i = 0; i < tr.length; i++) {
       td = tr[i].getElementsByTagName("td")[0];
-
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -36,12 +34,13 @@ export class TelephoneExtensionsComponent implements OnInit {
         }
       }
     }
+    // Show "no results found" message when there is no search results
     if ($('tr:visible').length <= 1) {
-        $('.no-results').css("display", "block");
-        $('.table-extensions').css("margin-bottom", "5px");
+      $('.no-results').css("display", "block");
+      $('.table-extensions').css("margin-bottom", "5px");
     } else {
-        $('.no-results').css("display", "none");
-        $('.table-extensions').css("margin-bottom", "75px");
+      $('.no-results').css("display", "none");
+      $('.table-extensions').css("margin-bottom", "75px");
     }
   }
 }
