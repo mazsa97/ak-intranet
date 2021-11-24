@@ -32,4 +32,7 @@ kbd {
   h2 {
     font-size: 20px;
   }
+  .idle-logo {
+    width: 200px;
+  }
 }
