@@ -7,10 +7,8 @@ declare var $: any;
   styleUrls: ['./top-button.component.css']
 })
 export class TopButtonComponent implements OnInit {
-  
   // Hostlistener for scrolling event
   @HostListener('window:scroll', ['$event.target'])
-  
   // If the user scrolled a 100 pixels the button will be shown in the bottom right corner, otherwise it will be hidden
   scroll(e: any) {
     let scroll = e.scrollingElement.scrollTop;
@@ -24,7 +22,7 @@ export class TopButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { }
-  
+
   // Function to scroll back to the top of page
   toTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
