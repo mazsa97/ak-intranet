@@ -1,4 +1,4 @@
-/* Global stylesheet */
+/* Global stylesheet for the app's global styling */
 
 /* Font Family */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -8,7 +8,7 @@
 }
 
 * {
-  scroll-behavior: auto !important; /* Disable smooth scroll on route changes */
+  scroll-behavior: auto !important; /* Disable smooth scroll so on route changes it instantly jumps back to the top of the page */
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 
 router-outlet + * {
   display: block;
-  animation: router-fade .25s ease-in-out;
+  animation: router-fade .25s ease-in-out; /* Display "fade" animation on route changes*/
 }
 
 .link-card {
@@ -60,21 +60,8 @@ router-outlet + * {
   color: lightgray !important;
 }
 
-/* Media queries */
-@media only screen and (max-width: 768px) {
-  .card-title {
-    font-size: smaller;
-  }
-  .link-open {
-    font-size: smaller;
-  }
-  .link-thumbnail {
-    width: 80%;
-    height: auto;
-  }
-}
-
 /* Calendar styles */
+
 .intranet-calendar a {
   color: white;
 }
@@ -89,6 +76,20 @@ router-outlet + * {
 }
 
 /* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .card-title {
+    font-size: smaller;
+  }
+  .link-open {
+    font-size: smaller;
+  }
+  .link-thumbnail {
+    width: 80%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .intranet-calendar .fc-toolbar {
     display: inline-block !important;
@@ -97,6 +98,7 @@ router-outlet + * {
 }
 
 /* Animations */
+
 @keyframes router-fade {
   0% {
     opacity: 0;
@@ -106,7 +108,7 @@ router-outlet + * {
   }
 }
 
-/* Scrollbar */
+/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 7.5px;
 }
