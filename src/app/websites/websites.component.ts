@@ -14,6 +14,7 @@ export class WebsitesComponent implements OnInit {
   currentUrl: string = '/websites';
   filteredLinks: any = this.links;
   searchFilter: any = '';
+  filterTitle: any = 'Összes';
 
   constructor(public router: Router) { }
 
@@ -22,6 +23,7 @@ export class WebsitesComponent implements OnInit {
   // Filter links if they contains the category
   filterLinksByCategory(category: any) {
     this.filteredLinks = this.links.filter((link: any) => {
+      this.filterTitle = category.name;
       return link.category.includes(category.id);
     })
   }
@@ -29,6 +31,7 @@ export class WebsitesComponent implements OnInit {
   // Reset filter back to default (all links)
   reset() {
     this.filteredLinks = this.links;
+    this.filterTitle = "Összes";
   }
   
   // Function for the input clear btn

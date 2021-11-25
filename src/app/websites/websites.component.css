@@ -124,6 +124,11 @@
   background-color: rgba(35, 58, 56, 1) !important;
 }
 
+.selected-filter {
+  font-style: italic;
+  text-decoration: underline;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 768px) {
