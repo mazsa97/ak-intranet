@@ -1,18 +1,23 @@
 <div class="websites-header">
   <h2 class="websites-header-title">Hasznos linkek</h2>
-  <div class="dropdown">
-    <button class="btn button-filter-dropdown dropdown-toggle shadow-none" type="button" id="filter-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <i class="fa fa-filter"></i> Szűrés
-    </button>
-    <div class="dropdown-menu" aria-labelledby="filter-dropdown">
-      <a class="dropdown-item" (click)="reset()">Összes</a>
-      <ng-container *ngFor="let category of categories">
-      <a class="dropdown-item" (click)="filterLinksByCategory(category)">{{category.name}}</a>
-      </ng-container>
+  <div class="input-group mb-3">
+  <input type="text" class="form-control rounded shadow-none" placeholder="Keresés...">
+  <div class="input-group-append">
+    <div class="dropdown">
+      <button class="btn button-filter-dropdown dropdown-toggle shadow-none" type="button" id="filter-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-filter"></i>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="filter-dropdown">
+        <a class="dropdown-item" (click)="reset()">Összes</a>
+        <ng-container *ngFor="let category of categories">
+        <a class="dropdown-item" (click)="filterLinksByCategory(category)">{{category.name}}</a>
+        </ng-container>
+      </div>
     </div>
   </div>
 </div>
-<h5>{{filterTitle}}</h5>
+</div>
+
 <div class="row link-list">
   <ng-container *ngFor="let link of filteredLinks">
     <div class="col-md" >

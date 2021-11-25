@@ -88,7 +88,7 @@
 .button-filter-dropdown {
   background-color: rgba(35, 58, 56, .8) !important;
   color: rgba(240, 192, 109, .9);
-  width: 160px;
+  /* width: 160px; */
 }
 
 .button-filter-dropdown:hover{
@@ -98,7 +98,7 @@
 
 .dropdown-menu {
   background-color: rgba(35, 58, 56, 1) !important;
-  width: 150px;
+  /* width: 150px; */
   text-align: center;
 }
 

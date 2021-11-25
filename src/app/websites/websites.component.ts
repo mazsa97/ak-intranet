@@ -15,33 +15,23 @@ export class WebsitesComponent implements OnInit {
   filteredLinks: any = this.links;
   filterTitle: string = '';
 
-  constructor(public router: Router) {
-    // Check on router change if the "all filter" should be visible or not
-    // router.events.subscribe((val) =>
-    //   this.checkFilter()
-    // );
-  }
+  constructor(public router: Router) { }
 
   ngOnInit(): void { }
-  
-  // Hide "All" filter button when no filter is selected
-  // checkFilter() {
-  //   if (this.router.url == "/websites") {
-  //     $('.all-filter').hide();
-  //   } else {
-  //     $('.all-filter').show();
-  //   }
-  // }
-  
+
+  // Filter links if they contains the category
   filterLinksByCategory(category: any) {
     this.filteredLinks = this.links.filter((link: any) => {
       return link.category.includes(category.id);
     })
   }
   
+  // Reset filter back to default (all links)
   reset() {
     this.filteredLinks = this.links;
   }
+  
+  // TODO: Search input for filtering links
   
 }
 
