@@ -38,19 +38,6 @@ router-outlet + * {
 /* Media queries */
 
 @media only screen and (max-width: 768px) {
-  .card-title {
-    font-size: smaller;
-  }
-  .link-open {
-    font-size: smaller;
-  }
-  .link-thumbnail {
-    width: 80%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 768px) {
   .intranet-calendar .fc-toolbar {
     display: inline-block !important;
     float: none !important;
