@@ -1,5 +1,6 @@
 // Website link objects
 
+// Links interface
 export interface Links {
   name: string;
   category: number[];
@@ -7,11 +8,13 @@ export interface Links {
   image: string;
 }
 
+// Categories interface for the links
 export interface Categories {
   id: number;
   name: string;
 }
 
+// Category objects
 export const CATEGORIES: Categories[] = [
   {
     id: 1,
@@ -35,6 +38,7 @@ export const CATEGORIES: Categories[] = [
   },
 ]
 
+// Link objects
 export const LINKS: Links[] = [
   { 
     name: 'E-rendelő', 
@@ -162,7 +166,7 @@ export const LINKS: Links[] = [
 LINKS.sort(compareNames);
 CATEGORIES.sort(compareNames);
 
-// Function for comparing values
+// Function for comparing values (for alphabetical sorting purposes)
 function compareNames(a: any, b: any) {
   if ( a.name < b.name ){
     return -1;
