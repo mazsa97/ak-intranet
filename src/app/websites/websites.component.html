@@ -1,18 +1,15 @@
 <div class="websites-header">
   <h2 class="websites-header-title">Hasznos linkek</h2>
   <nav class="nav nav-pills flex-column flex-sm-row websites-header-filter">
-    <a class="flex-sm-fill text-sm-center nav-link all-filter" routerLink="." routerLinkActive="active-all-filter">Összes</a>
-    <a class="flex-sm-fill text-sm-center nav-link" routerLink="./reception" routerLinkActive="active-filter">Recepció</a>
-    <a class="flex-sm-fill text-sm-center nav-link" routerLink="./administration" routerLinkActive="active-filter">Adminisztráció</a>
-    <a class="flex-sm-fill text-sm-center nav-link" routerLink="./management" routerLinkActive="active-filter">Vezetőség</a>
-    <a class="flex-sm-fill text-sm-center nav-link" routerLink="./callcenter" routerLinkActive="active-filter">Call Center</a>
-    <a class="flex-sm-fill text-sm-center nav-link" routerLink="./it" routerLinkActive="active-filter">IT</a>
+    <a class="flex-sm-fill text-sm-center nav-link all-filter" (click)="reset()">Összes</a>
+    <ng-container *ngFor="let category of categories">
+    <a class="flex-sm-fill text-sm-center nav-link" (click)="filterLinksByCategory(category)">{{category.name}}</a>
+    </ng-container>
   </nav>
 </div>
 
-<!-- All links if the active route is "/websites" -->
-<div class="row link-list" *ngIf="router.url === currentUrl">
-  <ng-container *ngFor="let link of links">
+<div class="row link-list">
+  <ng-container *ngFor="let link of filteredLinks">
     <div class="col-md" >
       <div class="card text-center link-card">
         <img class="card-img-top link-thumbnail" [src]=link.image [alt]=link.name>
@@ -25,8 +22,4 @@
       </div>
     </div>
   </ng-container>
-  </div>
-  
-<!-- Router to display only the filtered website links -->
-<router-outlet></router-outlet>
-
+</div>

@@ -2,129 +2,157 @@
 
 export interface Links {
   name: string;
-  category: string[];
+  category: number[];
   url: string;
   image: string;
 }
 
+export interface Categories {
+  id: number;
+  name: string;
+}
+
+export const CATEGORIES: Categories[] = [
+  {
+    id: 1,
+    name: 'Recepció'
+  },
+  {
+    id: 2,
+    name: 'Adminisztráció'
+  },
+  {
+    id: 3,
+    name: 'Vezetőség'
+  },
+  {
+    id: 4,
+    name: 'Call Center'
+  },
+  {
+    id: 5,
+    name: 'IT'
+  },
+]
+
 export const LINKS: Links[] = [
   { 
     name: 'E-rendelő', 
-    category: ['reception', 'administration', 'management', 'callcenter', 'it'], 
+    category: [1, 2, 3, 4, 5],
     url: 'https://lddsystems.eu/rendelo/', 
     image: 'assets/images/thumbnails/e_rendelo.png' 
   },
   { 
     name: 'ERP', 
-    category: ['reception', 'administration', 'callcenter', 'it'], 
+    category: [1, 2, 4, 5],
     url: 'http://erp.lddsystems.eu/web/login', 
     image: 'assets/images/thumbnails/erp.png' 
   },
   { 
     name: 'Slack', 
-    category: ['reception'], 
+    category: [1], 
     url: 'http://aranyklinika.slack.com', 
     image: 'assets/images/thumbnails/slack.jpg' 
   },
   { 
     name: 'Beosztás', 
-    category: ['reception'], 
+    category: [1], 
     url: 'https://tinyurl.com/ak-beosztas', 
     image: 'assets/images/thumbnails/beosztas.png' 
   },
   { 
     name: 'Aranyklinika', 
-    category: ['reception', 'callcenter'], 
+    category: [1, 4],
     url: 'https://aranyklinika.hu/', 
     image: 'assets/images/thumbnails/aranyklinika.png' 
   },
   { 
     name: 'Komplexlabor', 
-    category: ['reception', 'callcenter'], 
+    category: [1, 4],
     url: 'https://komplexlabor.hu/', 
     image: 'assets/images/thumbnails/komplexlabor.png' 
   },
   { 
     name: 'GitHub', 
-    category: ['administration', 'management', 'it'], 
+    category: [2, 3, 5],
     url: 'https://github.com/aranyklinika', 
     image: 'assets/images/thumbnails/github.png' 
   },
   { 
     name: 'IP Portál', 
-    category: ['administration'], 
+    category: [2],
     url: 'https://aranyklinika.ip-telefon.hu/ipportal/', 
     image: 'assets/images/thumbnails/ip_portal.png' 
   },
   { 
     name: 'Rextra', 
-    category: ['administration'], 
+    category: [2],
     url: 'https://rextra.hu/', 
     image: 'assets/images/thumbnails/rextra.png' 
   },
   { 
     name: 'Fordító', 
-    category: ['administration', 'callcenter'], 
+    category: [2, 4],
     url: 'https://translate.google.com/', 
     image: 'assets/images/thumbnails/fordito.png' 
   },
   { 
     name: 'Paracelsus Humán Medicina', 
-    category: ['administration'], 
+    category: [2],
     url: 'https://www.paracelsusmedicina.hu/', 
     image: 'assets/images/thumbnails/paracelus.png' 
   },
   { 
     name: 'Simple Pay', 
-    category: ['administration', 'management'], 
+    category: [2, 3],
     url: 'https://simplepay.hu/', 
     image: 'assets/images/thumbnails/simplepay.png' 
   },
   { 
     name: 'NAV', 
-    category: ['administration'], 
+    category: [2],
     url: 'https://www.nav.gov.hu/', 
     image: 'assets/images/thumbnails/nav.png' 
   },
   { 
     name: 'Számlázz', 
-    category: ['administration', 'management'], 
+    category: [2, 3],
     url: 'https://www.szamlazz.hu/', 
     image: 'assets/images/thumbnails/szamlazz.png' 
   },
   { 
     name: 'YNAB', 
-    category: ['administration', 'management'], 
+    category: [2, 3],
     url: 'https://www.youneedabudget.com', 
     image: 'assets/images/thumbnails/ynab.png' 
   },
   { 
     name: 'ÁNTSZ', 
-    category: ['management'], 
+    category: [3],
     url: 'https://www.antsz.hu/', 
     image: 'assets/images/thumbnails/antsz.png' 
   },
   { 
     name: 'MEDITOR', 
-    category: ['callcenter'], 
+    category: [4],
     url: 'http://www.kopifo.hu/', 
     image: 'assets/images/thumbnails/meditor.png' 
   },
   { 
     name: 'GMAIL', 
-    category: ['callcenter', 'it', 'management', 'reception', 'administration'], 
+    category: [1, 2, 3, 4, 5],
     url: 'https://mail.google.com/', 
     image: 'assets/images/thumbnails/gmail.png' 
   },
   { 
     name: 'LastPass', 
-    category: ['it'], 
+    category: [5],
     url: 'https://www.lastpass.com/', 
     image: 'assets/images/thumbnails/lastpass.png' 
   },
   { 
     name: 'Státusz', 
-    category: ['it'], 
+    category: [5],
     url: 'https://status.aranyklinika.hu/', 
     image: 'assets/images/thumbnails/statusz.png' 
   },
