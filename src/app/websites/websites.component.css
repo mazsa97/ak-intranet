@@ -88,7 +88,8 @@
 .button-filter-dropdown {
   background-color: rgba(35, 58, 56, .8) !important;
   color: rgba(240, 192, 109, .9);
-  /* width: 160px; */
+  border-radius: 0;
+  border-left: 1px solid rgba(240, 192, 109, 1) !important;
 }
 
 .button-filter-dropdown:hover{
@@ -111,6 +112,16 @@
   background: rgba(240, 192, 109, .5) !important;
   color: rgba(35, 58, 56, 1) !important;
   font-weight: bold;
+}
+
+.btn-input-clear {
+  background-color: rgba(35, 58, 56, .8) !important;
+  color: rgba(240, 192, 109, .9);
+  border-radius: 0;
+}
+
+.btn-input-clear:hover {
+  background-color: rgba(35, 58, 56, 1) !important;
 }
 
 /* Media queries */

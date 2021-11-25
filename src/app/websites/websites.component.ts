@@ -18,7 +18,7 @@ export class WebsitesComponent implements OnInit {
   constructor(public router: Router) { }
 
   ngOnInit(): void { }
-
+  
   // Filter links if they contains the category
   filterLinksByCategory(category: any) {
     this.filteredLinks = this.links.filter((link: any) => {
@@ -31,8 +31,10 @@ export class WebsitesComponent implements OnInit {
     this.filteredLinks = this.links;
   }
   
-  // TODO: Search input for filtering links
-  
+  // Function for the input clear btn
+  clearInput() {
+    this.searchFilter = '';
+  }
 }
 
 
