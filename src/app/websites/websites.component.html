@@ -1,13 +1,18 @@
 <div class="websites-header">
   <h2 class="websites-header-title">Hasznos linkek</h2>
-  <nav class="nav nav-pills flex-column flex-sm-row websites-header-filter">
-    <a class="flex-sm-fill text-sm-center nav-link all-filter" (click)="reset()">Összes</a>
-    <ng-container *ngFor="let category of categories">
-    <a class="flex-sm-fill text-sm-center nav-link" (click)="filterLinksByCategory(category)">{{category.name}}</a>
-    </ng-container>
-  </nav>
+  <div class="dropdown">
+    <button class="btn button-filter-dropdown dropdown-toggle shadow-none" type="button" id="filter-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-filter"></i> Szűrés
+    </button>
+    <div class="dropdown-menu" aria-labelledby="filter-dropdown">
+      <a class="dropdown-item" (click)="reset()">Összes</a>
+      <ng-container *ngFor="let category of categories">
+      <a class="dropdown-item" (click)="filterLinksByCategory(category)">{{category.name}}</a>
+      </ng-container>
+    </div>
+  </div>
 </div>
-
+<h5>{{filterTitle}}</h5>
 <div class="row link-list">
   <ng-container *ngFor="let link of filteredLinks">
     <div class="col-md" >

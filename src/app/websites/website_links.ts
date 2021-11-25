@@ -158,10 +158,11 @@ export const LINKS: Links[] = [
   },
 ];
 
-// Sorting the LINKS array
+// Sorting the LINKS and CATEGORIES array by name
 LINKS.sort(compareNames);
+CATEGORIES.sort(compareNames);
 
-// Function for comparing names
+// Function for comparing values
 function compareNames(a: any, b: any) {
   if ( a.name < b.name ){
     return -1;
