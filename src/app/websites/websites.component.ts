@@ -13,7 +13,7 @@ export class WebsitesComponent implements OnInit {
   categories: any = CATEGORIES;
   currentUrl: string = '/websites';
   filteredLinks: any = this.links;
-  filterTitle: string = '';
+  searchFilter: any = '';
 
   constructor(public router: Router) { }
 
