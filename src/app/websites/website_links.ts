@@ -131,7 +131,7 @@ export const LINKS: Links[] = [
     image: 'assets/images/thumbnails/ynab.png' 
   },
   { 
-    name: 'ÁNTSZ', 
+    name: 'ANTSZ', 
     category: [3],
     url: 'https://www.antsz.hu/', 
     image: 'assets/images/thumbnails/antsz.png' 
