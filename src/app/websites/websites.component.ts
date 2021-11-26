@@ -14,7 +14,7 @@ export class WebsitesComponent implements OnInit {
   currentUrl: string = '/websites';
   filteredLinks: any = this.links;
   searchFilter: any = '';
-  filterTitle: any = 'Összes';
+  filterTitle: any = '';
 
   constructor(public router: Router) { }
 
@@ -31,7 +31,7 @@ export class WebsitesComponent implements OnInit {
   // Reset filter back to default (all links)
   reset() {
     this.filteredLinks = this.links;
-    this.filterTitle = "Összes";
+    this.filterTitle = '';
   }
   
   // Function for the input clear btn
