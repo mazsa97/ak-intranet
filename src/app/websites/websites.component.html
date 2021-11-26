@@ -23,7 +23,9 @@
 </div>
 
 <!-- Title based on selected category with a clear button -->
-<h5 class="text-center">{{filterTitle}} <span class="clear-icon" *ngIf="filterTitle != ''" (click)="reset()"><i class="fa fa-close"></i></span></h5>
+<h5 class="text-center">
+  {{filterTitle}} <span class="clear-icon" *ngIf="filterTitle != ''" (click)="reset()"><i class="fa fa-close"></i></span>
+</h5>
 
 <!-- Link cards -->
 <div class="row link-list">
