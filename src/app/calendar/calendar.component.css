@@ -10,11 +10,10 @@ full-calendar {
   border-radius: 5px;
 }
 
-
 table {
   border-color: red;
 }
 
-.fc .fc-daygrid-day-number {
+.fc-daygrid-day-number {
   color: white !important;
 }

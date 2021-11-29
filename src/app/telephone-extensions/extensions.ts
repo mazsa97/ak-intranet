@@ -1,10 +1,12 @@
 // Telephone extensions 
 
+// Extensions interface
 export interface Extensions {
   name: string;
   number: number;
 }
 
+// Extensions array
 export const EXTENSIONS: Extensions[] = [
   { 
     name: 'Rendelő 1',
@@ -177,10 +179,10 @@ export const EXTENSIONS: Extensions[] = [
 ];
 
 // Sort array by nr.
-EXTENSIONS.sort(compareNames);
+EXTENSIONS.sort(compareNumbers);
 
 // Function for comparing numbers
-function compareNames(a: any, b: any) {
+function compareNumbers(a: any, b: any) {
   if ( a.number < b.number ){
     return -1;
   }

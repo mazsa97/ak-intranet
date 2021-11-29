@@ -19,7 +19,6 @@ export class NavigationBarComponent implements OnInit {
       this.navbarOpen = false;
     });
   }
-  
   // Toggle boolean value
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;

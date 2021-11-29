@@ -14,7 +14,7 @@ export interface Categories {
   name: string;
 }
 
-// Category objects
+// Categories array
 export const CATEGORIES: Categories[] = [
   {
     id: 1,

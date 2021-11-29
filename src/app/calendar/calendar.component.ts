@@ -9,6 +9,7 @@ import huLocale from '@fullcalendar/core/locales/hu';
 })
 export class CalendarComponent implements OnInit {
   
+  // Set calendar options (view, lang, etc.)
   calendarOptions: CalendarOptions = {
     initialView: 'dayGridMonth',
     locale: huLocale
