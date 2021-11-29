@@ -1,7 +1,15 @@
 # Aranyklinika Intranet
 
-Useful links, informations etc. for our collegues on our private network only, built with angular.
+Useful links, informations etc. for our colleagues on our private network only, built with angular.
+The site can be used both on desktop and mobile, thanks to the responsive design.
+This project can be installed via chrome, becuse it's a PWA (Progressive Web Application).
+Search for the install button or prompt in your browser!
 
+Used libraries:
+  - Bootstrap
+  - Font Awesome
+  - ...
+  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
 ## Development server
