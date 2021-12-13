@@ -15,7 +15,7 @@ export class AppComponent {
   constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    // Dynamic page titles
+    // Dynamic page titles based on their routes and its title values
     const appTitle = this.titleService.getTitle();
     this.router
       .events.pipe(
