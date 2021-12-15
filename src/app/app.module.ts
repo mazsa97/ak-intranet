@@ -16,6 +16,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FormsModule } from "@angular/forms";
 import { Ng2SearchPipeModule } from "ng2-search-filter";
+import { PwaInstallerComponent } from './pwa-installer/pwa-installer.component';
 
 // Register FullCalendar plugins
 FullCalendarModule.registerPlugins([
@@ -32,7 +33,8 @@ FullCalendarModule.registerPlugins([
     TopButtonComponent,
     IdleScreenComponent,
     TelephoneExtensionsComponent,
-    CalendarComponent
+    CalendarComponent,
+    PwaInstallerComponent
   ],
   imports: [
     BrowserModule,
