@@ -9,11 +9,3 @@ full-calendar {
   padding: 5px;
   border-radius: 5px;
 }
-
-table {
-  border-color: red;
-}
-
-.fc-daygrid-day-number {
-  color: white !important;
-}
