@@ -27,11 +27,13 @@ export class WebsitesComponent implements OnInit {
       return link.category.includes(category.id);
     })
   }
+  
   // Reset filter back to default (all links)
   reset() {
     this.filteredLinks = this.links;
     this.filterTitle = '';
   }
+  
   // Function for the input clear btn
   clearInput() {
     this.searchFilter = '';

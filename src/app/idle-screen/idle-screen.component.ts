@@ -56,7 +56,7 @@ export class IdleScreenComponent implements OnInit {
       document.removeEventListener("click", onActivity);
       document.removeEventListener("focus", onActivity);
       document.removeEventListener("scroll", onActivity);
-      // delay timer with 1000 milliseconds
+      // delay timer with 1000 milliseconds before it starts
       setTimeout(startTimer, 1000);
     }
   }

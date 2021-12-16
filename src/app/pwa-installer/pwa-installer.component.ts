@@ -14,10 +14,12 @@ export class PwaInstallerComponent implements OnInit {
     let installButton: any = document.querySelector('#pwa-button');
 
     /* If the user presses the button, and the app wasnt installed before, 
-    the installer prompt will be displayed on the screen. */
+    the installer prompt will be displayed on the screen.
+    This component is still in "experimental mode" */
     window.addEventListener('beforeinstallprompt', (event) => {
       promptEvent = event;
     });
+    
     installButton.addEventListener('click', () => {
       if (promptEvent) {
         promptEvent.prompt();
@@ -33,5 +35,4 @@ export class PwaInstallerComponent implements OnInit {
       }
     });
   }
-
 }
