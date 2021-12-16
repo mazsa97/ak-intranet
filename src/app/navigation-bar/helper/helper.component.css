@@ -1,0 +1,37 @@
+/* Stylesheet for the "navigation-bar component" */
+
+.accordion-button:focus {
+  border-color: none !important;
+}
+
+#help-accordion .accordion-item {
+  border: 1px solid rgba(240, 192, 109) !important;
+}
+
+#help-accordion .accordion-button, .accordion-button:focus {
+  background-color: rgb(35, 58, 56) !important;
+  color: rgba(240, 192, 109) !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  border-color: rgba(0,0,0,.125);
+}
+
+#help-accordion .accordion-button::after {
+background-color: rgba(240, 192, 109) !important;
+border-radius: 5px;
+}
+
+#help-accordion .accordion-collapse {
+  background-color: rgba(240, 192, 109) !important;
+  color: black !important;
+  border-radius: 0 !important;
+}
+
+#intranet-helper-canvas {
+  color: rgb(240, 192, 109);
+  background-color: rgb(35, 58, 56);
+}
+
+#canvas-close-btn {
+  background-color: rgb(240, 192, 109) !important;
+}

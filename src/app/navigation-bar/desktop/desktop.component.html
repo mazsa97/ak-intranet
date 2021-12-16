@@ -1,0 +1,37 @@
+<!-- Desktop navigation bar -->
+<div class="navigation-bar d-flex flex-column flex-shrink-0" style="width: 4.5rem;">
+    <div class="navbar-logo-div">
+      <a routerLink="" class="d-block p-3 link-dark text-decoration-none" title="Aranyklinika intranet">
+        <img src="assets/images/AK_logo_menu.png" class="navbar-logo" alt="AK-logo">
+      </a>
+    </div>
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li class="nav-item">
+        <a routerLink="" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Főoldal">
+          <i class="fa fa-lg fa-home"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="websites" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Linkek">
+          <i class="fa fa-lg fa-link"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="telephone" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Mellékek">
+          <i class="fa fa-lg fa-phone"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="calendar" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Naptár">
+          <i class="fa fa-lg fa-calendar"></i>
+        </a>
+      </li>
+      <li class="nav-item navigation-help-button">
+        <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Súgó">
+          <a class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#intranet-helper-canvas">
+            <i class="fa fa-lg fa-info-circle"></i>
+          </a>
+        </span>
+      </li>
+    </ul>
+  </div>

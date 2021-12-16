@@ -1,0 +1,91 @@
+/* Stylesheet for the "navigation-bar component" */
+
+.navigation-bar-mobile {
+  background-color: rgb(35, 58, 56) !important;
+  padding: 0;
+  display: none !important;
+  border-bottom: 1px solid rgba(240, 192, 109) !important;
+}
+
+.navbar-toggler-mobile {
+  color: rgba(240, 192, 109, .5) !important;
+  transition: all .25s;
+  padding: 2.5px;
+}
+
+.navbar-toggler {
+  border: none !important;
+  border: 1px solid rgba(240, 192, 109, .25) !important;
+  transition: all .25s;
+}
+
+.navbar-toggler:hover {
+  border: none !important;
+  border: 1px solid rgba(240, 192, 109, 1) !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-mobile {
+  color: rgba(240, 192, 109, 1) !important;
+}
+
+.navigation-bar a{
+  border-bottom: 1px solid rgba(240, 192, 109, .25) !important;
+  padding: 15px !important;
+}
+
+.navigation-bar li:hover {
+  background-color: rgba(240, 192, 109, .5);
+  transition: all .25s;
+}
+
+.navigation-bar li:hover i {
+  color: rgba(35, 58, 56, .8) !important;
+}
+
+.active-navbar-mobile-element {
+  background-color: rgba(240, 192, 109, .5);
+  font-style: italic;
+}
+
+.navigation-help-button, .navigation-help-button small {
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.help {
+  cursor: pointer !important;
+} 
+
+.navbar-logo-mobile {
+  width: 30px;
+  padding-top: 2.5px;
+  transition: all .25s;
+}
+
+a:hover .navbar-logo {
+filter: brightness(.75);
+}
+
+a:hover .navbar-logo-mobile {
+filter: brightness(.75);
+}
+
+.mobile-item a {
+  color: rgba(240, 192, 109, .8) !important;
+  text-align: center;
+  border-bottom: 1px solid rgba(240, 192, 109, .25) !important;
+  transition: all .25s;
+}
+
+.mobile-item:hover a {
+  color: rgb(35, 58, 56) !important;
+  background-color: rgba(240, 192, 109, .5) !important;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  .navigation-bar-mobile {
+    display: block !important;
+  }
+}
