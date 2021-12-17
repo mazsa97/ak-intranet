@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -9,7 +7,10 @@ import { filter } from 'rxjs/operators';
 })
 export class NavigationBarComponent implements OnInit {
   
-  constructor(private router: Router) { }
+  /* This component contains the sub navigation bar components,
+     All variables, functions are included in their own component */
+  
+  constructor() { }
 
   ngOnInit(): void { }
 
