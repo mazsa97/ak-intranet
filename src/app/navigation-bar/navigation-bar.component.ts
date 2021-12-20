@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationBarComponent implements OnInit {
   
   /* This component contains the sub navigation bar components,
-     All variables, functions are included in their own component */
+  All variables, functions are included in their own component */
   
   constructor() { }
 
