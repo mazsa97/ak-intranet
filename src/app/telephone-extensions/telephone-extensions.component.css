@@ -6,10 +6,16 @@
   border-radius: 5px;
   padding: 10px 15px 10px 15px !important;
   margin-bottom: 25px !important;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .table-extensions {
   margin-bottom: 75px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .table-extensions thead tr {

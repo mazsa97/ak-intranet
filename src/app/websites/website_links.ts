@@ -43,7 +43,7 @@ export const LINKS: Links[] = [
   { 
     name: 'E-rendelő', 
     category: [1, 2, 3, 4, 5],
-    url: 'https://lddsystems.eu/rendelo/', 
+    url: 'https://lddsystems.eu/rendelo', 
     image: 'assets/images/thumbnails/e_rendelo.png' 
   },
   { 
