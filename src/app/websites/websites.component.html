@@ -42,5 +42,7 @@
       </div>
     </div>
   </ng-container>
+  <!-- Show message if there is no results to show -->
+  <h5 class="no-results text-center" *ngIf="(links | filter:searchFilter)?.length <= 0">Nincs keresési találat! <i class="fa fa-link text-danger"></i></h5>
 </div>
 
