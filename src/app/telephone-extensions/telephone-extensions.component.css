@@ -40,6 +40,12 @@
   color: rgb(240, 192, 109) !important;
 }
 
+.btn-input-clear {
+  background-color: rgba(35, 58, 56, .8) !important;
+  color: rgba(240, 192, 109, .9);
+  border-radius: 0;
+}
+
 .no-results {
   display: none;
 }

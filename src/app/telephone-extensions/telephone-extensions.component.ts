@@ -9,6 +9,7 @@ declare var $: any;
 })
 export class TelephoneExtensionsComponent implements OnInit {
   extensions = EXTENSIONS;
+  extensionField: any;
 
   constructor() { }
 
@@ -42,4 +43,11 @@ export class TelephoneExtensionsComponent implements OnInit {
       $('.table-extensions').css("margin-bottom", "75px");
     }
   }
+  
+  clearField(){
+    this.extensionField = '';
+    // Delay reseting the table, so the input filed can reset first
+    setTimeout(() => {this.searchFields()}, 100);
+  }
+  
 }
