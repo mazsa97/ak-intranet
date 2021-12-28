@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: rgba(240, 192, 109, .05);
+  background-color: rgba(240, 192, 109, .05); /* Universal "yellowish" background color for the app */
 }
 
 router-outlet + * {
@@ -61,6 +61,7 @@ router-outlet + * {
 }
 
 /* Scrollbar styling */
+
 ::-webkit-scrollbar {
   width: 7.5px;
 }

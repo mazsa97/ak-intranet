@@ -1,16 +1,15 @@
 /* Stylesheet for the "welcome component" */
 
 .welcome-container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   text-align: center;
 }
 
 .welcome-logo {
   width: 275px;
+  margin: 10% 0 25px 0;
   padding-bottom: 0px;
-  margin-top: 10%;
-  margin-bottom: 25px;
+  
 }
 
 .welcome-title {

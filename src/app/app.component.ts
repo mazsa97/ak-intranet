@@ -33,14 +33,14 @@ export class AppComponent {
   }
 }
 
-// Bootstrap tooltip function
-$(function() {
-  $('[data-bs-toggle="tooltip"]').tooltip();
-})
+  // Bootstrap tooltip function
+  $(function() {
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  })
 
-// Hide tooltip after clicking on it, preventing tooltip staying active on the screen
-$(document).ready(function() {
-  $('[data-bs-toggle="tooltip"]').click(function() {
-    $('[data-bs-toggle="tooltip"]').tooltip("hide");
+  // Hide tooltip after clicking on it, preventing tooltip staying active on the screen
+  $(document).ready(function() {
+    $('[data-bs-toggle="tooltip"]').click(function() {
+      $('[data-bs-toggle="tooltip"]').tooltip("hide");
+    });
   });
-});
