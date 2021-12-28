@@ -1,7 +1,12 @@
 /* Global stylesheet for the app's global styling */
 
-/* Font Family */
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* Montserrat Font Family */
+@font-face {
+  font-family: Montserrat;
+  src: url('assets/fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :not(i){
   font-family: Montserrat !important; /* Set font family excluding the i tag to make font awesome work */
