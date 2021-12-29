@@ -13,14 +13,17 @@ export class MobileComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
     // Force close mobile navbar on router changes
     this.router.events.pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd)).subscribe(event => {
       this.navbarOpen = false;
     });
+    
   }
+  
   // Navbar toggler function, necessary for the navbar automatic closing on route changes
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
+  
 }
