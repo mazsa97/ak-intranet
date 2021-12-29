@@ -1,30 +1,30 @@
 /* Stylesheet for the navigation-bar helper canvas component */
 
 .accordion-button:focus {
-  border-color: none !important;
+  border-color: none;
 }
 
 #help-accordion .accordion-item {
-  border: 1px solid rgba(240, 192, 109) !important;
+  border: .5px solid rgba(240, 192, 109);
 }
 
 #help-accordion .accordion-button, .accordion-button:focus {
-  background-color: rgb(35, 58, 56) !important;
-  color: rgba(240, 192, 109) !important;
-  border-radius: 0 !important;
+  background-color: rgb(35, 58, 56);
+  color: rgba(240, 192, 109);
+  border-radius: 0;
   box-shadow: none;
   border-color: rgba(0,0,0,.125);
 }
 
 #help-accordion .accordion-button::after {
-background-color: rgba(240, 192, 109) !important;
+background-color: rgba(240, 192, 109);
 border-radius: 5px;
 }
 
 #help-accordion .accordion-collapse {
-  background-color: rgba(240, 192, 109) !important;
-  color: black !important;
-  border-radius: 0 !important;
+  background-color: rgba(240, 192, 109);
+  color: black;
+  border-radius: 0;
 }
 
 #intranet-helper-canvas {
@@ -33,5 +33,5 @@ border-radius: 5px;
 }
 
 #canvas-close-btn {
-  background-color: rgb(240, 192, 109) !important;
+  background-color: rgb(240, 192, 109);
 }

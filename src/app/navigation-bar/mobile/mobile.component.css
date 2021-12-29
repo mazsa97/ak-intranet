@@ -3,43 +3,27 @@
 .navigation-bar-mobile {
   background-color: rgb(35, 58, 56) !important;
   padding: 0;
-  display: none !important;
-  border-bottom: 1px solid rgba(240, 192, 109) !important;
+  display: none;
+  border-bottom: 1px solid rgba(240, 192, 109);
 }
 
 .navbar-toggler-mobile {
-  color: rgba(240, 192, 109, .5) !important;
+  color: rgba(240, 192, 109, .5);
   transition: all .25s;
   padding: 2.5px;
 }
 
 .navbar-toggler {
-  border: none !important;
-  border: 1px solid rgba(240, 192, 109, .25) !important;
+  border: 1px solid rgba(240, 192, 109, .25);
   transition: all .25s;
 }
 
 .navbar-toggler:hover {
-  border: none !important;
-  border: 1px solid rgba(240, 192, 109, 1) !important;
+  border: 1px solid rgba(240, 192, 109, 1);
 }
 
 .navbar-toggler:hover .navbar-toggler-mobile {
-  color: rgba(240, 192, 109, 1) !important;
-}
-
-.navigation-bar a{
-  border-bottom: 1px solid rgba(240, 192, 109, .25) !important;
-  padding: 15px !important;
-}
-
-.navigation-bar li:hover {
-  background-color: rgba(240, 192, 109, .5);
-  transition: all .25s;
-}
-
-.navigation-bar li:hover i {
-  color: rgba(35, 58, 56, .8) !important;
+  color: rgba(240, 192, 109, 1);
 }
 
 .active-navbar-mobile-element {
@@ -47,13 +31,8 @@
   font-style: italic;
 }
 
-.navigation-help-button, .navigation-help-button small {
-  color: white !important;
-  cursor: pointer !important;
-}
-
 .help {
-  cursor: pointer !important;
+  cursor: pointer;
 } 
 
 .navbar-logo-mobile {
@@ -62,24 +41,20 @@
   transition: all .25s;
 }
 
-a:hover .navbar-logo {
-filter: brightness(.75);
-}
-
 a:hover .navbar-logo-mobile {
 filter: brightness(.75);
 }
 
 .mobile-item a {
-  color: rgba(240, 192, 109, .8) !important;
+  color: rgba(240, 192, 109, .8);
   text-align: center;
-  border-bottom: 1px solid rgba(240, 192, 109, .25) !important;
+  border-bottom: 1px solid rgba(240, 192, 109, .25);
   transition: all .25s;
 }
 
 .mobile-item:hover a {
-  color: rgb(35, 58, 56) !important;
-  background-color: rgba(240, 192, 109, .5) !important;
+  color: rgb(35, 58, 56);
+  background-color: rgba(240, 192, 109, .5);
 }
 
 /* Media queries */

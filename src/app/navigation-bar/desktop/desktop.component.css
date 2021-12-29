@@ -1,30 +1,15 @@
 /* Stylesheet for the desktop navigation-bar component */
 
 .navigation-bar {
-  height: 100% !important;
-  position:  fixed !important;
+  height: 100%;
+  position: fixed;
   width: 75px !important;
-  background-color: rgb(35, 58, 56) !important;
-  border-right: 1px solid rgba(240, 192, 109) !important;
-}
-
-.navbar-toggler {
-  border: none !important;
-  border: 1px solid rgba(240, 192, 109, .25) !important;
-  transition: all .25s;
-}
-
-.navbar-toggler:hover {
-  border: none !important;
-  border: 1px solid rgba(240, 192, 109, 1) !important;
-}
-
-.navbar-toggler:hover .navbar-toggler-mobile {
-  color: rgba(240, 192, 109, 1) !important;
+  background-color: rgb(35, 58, 56);
+  border-right: 1px solid rgba(240, 192, 109);
 }
 
 .navigation-bar i {
-  color: rgba(240, 192, 109, .75) !important;
+  color: rgba(240, 192, 109, .75);
 }
 
 .navigation-bar a{
@@ -38,7 +23,7 @@
 }
 
 .navigation-bar li:hover i {
-  color: rgba(35, 58, 56, .8) !important;
+  color: rgba(35, 58, 56, .8);
 }
 
 .active-navbar-element {
@@ -46,44 +31,27 @@
 }
 
 .active-navbar-element i {
-  color: rgba(35, 58, 56, .8) !important;
+  color: rgba(35, 58, 56, .8);
 }
 
 .navigation-help-button, .navigation-help-button small {
-  color: white !important;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .navbar-logo {
   width: 30px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   padding: 0;
   transition: all .25s;
 }
 
 .navbar-logo-div {
-  border-bottom: 2px solid rgba(240, 192, 109, .5) !important;
+  border-bottom: 2px solid rgba(240, 192, 109, .5);
 }
 
 a:hover .navbar-logo {
 filter: brightness(.75);
-}
-
-a:hover .navbar-logo-mobile {
-filter: brightness(.75);
-}
-
-.navbar-copyright {
-  text-align: center;
-  font-size: 7.5px;
-  color: white;
-}
-
-.close {
-  cursor: pointer;
-  color: rgba(240, 192, 109) !important;
 }
 
 /* Media queries */

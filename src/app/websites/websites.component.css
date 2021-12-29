@@ -1,14 +1,5 @@
 /* Stylesheet for the "all websites component" */
 
-.websites-header {
-  background-color: rgba(35, 58, 56, .9) !important;
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px !important;
-  max-width: 1280px;
-  margin: auto auto 25px auto !important;
-  
-}
-
 .websites-header-title {
   color: rgba(240, 192, 109, .9);
   text-align: center;
@@ -17,13 +8,13 @@
 .websites-header-filter a{
   text-align: center;
   color: rgba(240, 192, 109, 1);
-  background-color: rgba(35, 58, 56) !important;
-  margin: 2.5px 5px 2.5px 5px !important;
+  background-color: rgba(35, 58, 56);
+  margin: 2.5px 5px 2.5px 5px;
 }
 
 .websites-header-filter a:hover {
-  background-color: rgba(240, 192, 109, 1) !important;
-  color: rgba(35, 58, 56) !important;
+  background-color: rgba(240, 192, 109, 1);
+  color: rgba(35, 58, 56);
   cursor: pointer;
 }
 
@@ -31,27 +22,27 @@
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
-  border: 1px solid rgba(240, 192, 109, 1) !important;
+  border: 1px solid rgba(240, 192, 109, 1);
 }
 
 .websites-header-filter .all-filter {
-  color: rgba(35, 58, 56) !important;
-  background-color: rgba(220, 192, 109, 1) !important;
-  font-weight: bold !important;
+  color: rgba(35, 58, 56);
+  background-color: rgba(220, 192, 109, 1);
+  font-weight: bold;
 }
 
 
 .link-card {
-  background-color: rgba(35, 58, 56, .9) !important;
-  color: white !important;
-  margin: 15px auto 15px auto !important;
+  background-color: rgba(35, 58, 56, .9);
+  color: white;
+  margin: 15px auto 15px auto;
   padding: 15px 0px 0px 0px;
+  max-width: 400px;
   transition: all .4s;
-  max-width: 400px !important;
 }
 
 .link-card:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.05);
 }
 
 .link-thumbnail {
@@ -63,13 +54,12 @@
 
 .link-list {
   max-width: 1280px;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  margin: 0 auto 0 auto;
 }
 
 .link-open {
-  background-color: rgba(240, 192, 109, 1) !important;
-  color: rgba(35, 58, 56) !important;
+  background-color: rgba(240, 192, 109, 1);
+  color: rgba(35, 58, 56) ;
   margin-top: 10px;
 }
 
@@ -79,53 +69,51 @@
 }
 
 .small-url {
-  color: lightgray !important;
+  color: #B6B6B6 !important;
 }
 
 .dropdown {
   text-align: right;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 
 .button-filter-dropdown {
-  background-color: rgba(35, 58, 56, .8) !important;
+  background-color: rgba(35, 58, 56, .8);
   color: rgba(240, 192, 109, .9);
   border-radius: 0;
-  border-left: 1px solid rgba(240, 192, 109, 1) !important;
+  border-left: 1px solid rgba(240, 192, 109, 1);
 }
 
 .button-filter-dropdown:hover{
-  background-color: rgba(35, 58, 56, 1) !important;
+  background-color: rgba(35, 58, 56, 1);
   color: rgba(240, 192, 109, .9);
 }
 
 .dropdown-menu {
-  background-color: rgba(35, 58, 56, 1) !important;
-  /* width: 150px; */
+  background-color: rgba(35, 58, 56, 1);
   text-align: center;
 }
 
 .dropdown-item {
-  color: rgba(240, 192, 109, .9) !important;
+  color: rgba(240, 192, 109, .9);
   cursor: pointer;
-  margin-bottom: .5rem;
+  margin-bottom: 2.5px;
 }
 
 .dropdown-item:hover {
-  background: rgba(240, 192, 109, .5) !important;
-  color: rgba(35, 58, 56, 1) !important;
+  background: rgba(240, 192, 109, .5);
+  color: rgba(35, 58, 56, 1);
   font-weight: bold;
 }
 
 .btn-input-clear {
-  background-color: rgba(35, 58, 56, .8) !important;
+  background-color: rgba(35, 58, 56, .8);
   color: rgba(240, 192, 109, .9);
   border-radius: 0;
 }
 
 .btn-input-clear:hover {
-  background-color: rgba(35, 58, 56, 1) !important;
+  background-color: rgba(35, 58, 56, 1);
 }
 
 .clear-icon {
@@ -140,8 +128,8 @@
 
 @media only screen and (max-width: 768px) {
   .websites-header-filter {
-    font-size: 13px !important;
-    margin: 1px 3.5px 1px 3.5px !important;
+    font-size: 13px;
+    margin: 1px 3.5px 1px 3.5px;
   }
   .dropdown {
     text-align: center;

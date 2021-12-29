@@ -1,13 +1,13 @@
 /* Stylesheet for the "not-found component" */
 
 .alert {
-  background-color: rgba(35, 58, 56, .95) !important;
+  background-color: rgba(35, 58, 56, .95);
   color: white;
 }
 .not-found {
-  width: 80% !important;
+  width: 80%;
   margin: 0 auto 0 auto;
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 .not-found i {

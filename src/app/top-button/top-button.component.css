@@ -5,7 +5,7 @@
   bottom: 15px;
   right: 10px;
   display: none;
-  background-color: rgb(35, 58, 56) !important;
+  background-color: rgb(35, 58, 56);
   border: none;
   border-radius: 5px;
   padding: 2.5px;
@@ -14,10 +14,10 @@
 }
 
 #btn-back-to-top i {
-  color: rgba(240, 192, 109, .75) !important;
+  color: rgba(240, 192, 109, .75);
   transition: all .25s;
 }
 
 #btn-back-to-top:hover i {
-  color: rgba(240, 192, 109, 1) !important;
+  color: rgba(240, 192, 109, 1);
 }
