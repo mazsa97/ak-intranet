@@ -9,7 +9,7 @@
 }
 
 :not(i){
-  font-family: Montserrat !important; /* Set font family excluding the i tag to make font awesome work */
+  font-family: Montserrat; /* Set font family excluding the i tag to make font awesome work */
 }
 
 * {
@@ -42,11 +42,11 @@ router-outlet + * {
 
 /* Universal page header class */
 .page-header {
-  background-color: rgba(35, 58, 56, .9) !important;
+  background-color: rgba(35, 58, 56, .9);
   color: rgba(240, 192, 109, .9);
   border-radius: 5px;
-  padding: 10px 15px 10px 15px !important;
-  margin-bottom: 25px !important;
+  padding: 10px 15px 10px 15px ;
+  margin-bottom: 25px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -58,6 +58,7 @@ router-outlet + * {
   .intranet-calendar .fc-toolbar {
     display: inline-block !important;
     float: none !important;
+    margin-top: 5px !important;
   }
 }
 
