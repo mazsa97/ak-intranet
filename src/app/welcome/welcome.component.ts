@@ -12,24 +12,22 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit(): void { }
   
-  // Show greeting message based on time of the day
+  // Show greeting message based on time of the day (only refresh on page reloads/route changes)
   showGreeting() {
     // Get current hour
     let current = this.date.getHours();
     let message: string = '';
     
     // Messages based on current hour
-    if (current < 9) {
-        message = 'Jó reggelt';
+    if (current < 10) {
+        message = 'Jó reggelt,';
     }
-    if (current >= 9 && current < 18) {
-        message = 'Jó napot';
+    if (current >= 10 && current < 18) {
+        message = 'Jó napot,';
     }
     if (current >= 18) {
-        message = 'Jó estét';
+        message = 'Jó estét,';
     }
-    // Append "," to the end of the text
-    message = message + ',';
     return message;
   }
 

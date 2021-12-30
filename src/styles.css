@@ -25,6 +25,10 @@ router-outlet + * {
   animation: router-fade .25s ease-in-out; /* Display "fade" animation on route changes*/
 }
 
+.javascript-error {
+  margin: 25px auto 0 auto;
+}
+
 /* Calendar styles */
 
 .intranet-calendar a {

@@ -16,10 +16,10 @@ const routes: Routes = [
     }
   },
   {
-    path: 'telephone',
+    path: 'extensions',
     component: TelephoneExtensionsComponent,
     data: {
-      title: "Mellékek"
+      title: "Telefonos mellékek"
     }
   },
   {
@@ -33,7 +33,7 @@ const routes: Routes = [
     path: 'websites',
     component: WebsitesComponent,
     data: {
-      title: "Linkek"
+      title: "Hasznos weboldal linkek"
     },
   },
   {
