@@ -13,9 +13,13 @@
 }
 
 .welcome-title {
-  font-size: 32px;
   font-weight: bold;
   margin-bottom: 25px;
+}
+
+.greeting-message {
+  font-size: calc(1.275rem + .3vw); /* Font sized based on bootstrap h4 tags font size */
+  margin: 0 0 10px 0;
 }
 
 @media only screen and (max-width: 768px) {
