@@ -44,10 +44,11 @@ export class TelephoneExtensionsComponent implements OnInit {
     }
   }
   
+  // Clear user input
   clearField(){
     this.extensionField = '';
     // Delay reseting the table, so the input filed can reset first
-    setTimeout(() => {this.searchFields()}, 100);
+    setTimeout(() => {this.searchFields()}, 1); // 1 milliseconds
   }
   
 }
