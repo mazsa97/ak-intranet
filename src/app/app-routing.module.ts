@@ -5,6 +5,7 @@ import { WebsitesComponent } from "./websites/websites.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { TelephoneExtensionsComponent } from "./telephone-extensions/telephone-extensions.component";
 import { CalendarComponent } from "./calendar/calendar.component";
+import { ServerStatusComponent } from "./server-status/server-status.component";
 
 // Registered routes of the application
 const routes: Routes = [
@@ -35,6 +36,13 @@ const routes: Routes = [
     data: {
       title: "Hasznos weboldal linkek"
     },
+  },
+  {
+    path: 'status',
+    component: ServerStatusComponent,
+    data: {
+      title: "Szerver státuszok"
+    }
   },
   {
     path: '**',

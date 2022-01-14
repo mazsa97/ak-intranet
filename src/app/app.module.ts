@@ -19,6 +19,7 @@ import { Ng2SearchPipeModule } from "ng2-search-filter";
 import { DesktopComponent } from './navigation-bar/desktop/desktop.component';
 import { MobileComponent } from './navigation-bar/mobile/mobile.component';
 import { HelperComponent } from './navigation-bar/helper/helper.component';
+import { ServerStatusComponent } from './server-status/server-status.component';
 
 // Register FullCalendar plugins
 FullCalendarModule.registerPlugins([
@@ -38,7 +39,8 @@ FullCalendarModule.registerPlugins([
     CalendarComponent,
     DesktopComponent,
     MobileComponent,
-    HelperComponent
+    HelperComponent,
+    ServerStatusComponent
   ],
   imports: [
     BrowserModule,

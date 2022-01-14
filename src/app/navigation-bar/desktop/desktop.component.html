@@ -5,26 +5,15 @@
       </a>
     </div>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-      <li class="nav-item">
-        <a routerLink="" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Főoldal">
-          <i class="fa fa-lg fa-home"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="websites" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Linkek">
-          <i class="fa fa-lg fa-link"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="extensions" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Mellékek">
-          <i class="fa fa-lg fa-phone"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="calendar" routerLinkActive="active-navbar-element" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Naptár">
-          <i class="fa fa-lg fa-calendar"></i>
-        </a>
-      </li>
+      <!-- Display all navigation links -->
+      <ng-container *ngFor="let navigation of navigations">
+        <li class="nav-item">
+          <a [routerLink]="navigation.path" class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" [attr.data-bs-original-title]="navigation.name">
+            <i [class]="navigation.icon"></i>
+          </a>
+        </li>
+      </ng-container>
+      <!-- Helper component -->
       <li class="nav-item navigation-help-button">
         <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Súgó">
           <a class="nav-link py-3 border-bottom" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#intranet-helper-canvas">

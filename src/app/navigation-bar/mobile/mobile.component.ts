@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { NAVIGATIONS } from "../navigations";
 
 @Component({
   selector: 'app-mobile',
@@ -10,6 +11,7 @@ import { filter } from 'rxjs/operators';
 export class MobileComponent implements OnInit {
   time = new Date();
   navbarOpen: boolean = false;
+  navigations = NAVIGATIONS;
 
   constructor(private router: Router) { }
 
