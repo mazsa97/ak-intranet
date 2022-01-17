@@ -1,7 +1,7 @@
 /* Stylesheet for the "telephone-extensions component" */
 
 .table-extensions {
-  margin-bottom: 60px;
+  margin-bottom: 4rem;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +14,7 @@
 
 .table-extensions tr {
   background-color: rgba(35, 58, 56, .5); 
-  color: white;
+  color: #FFFFFF;
   border: none;
 }
 
@@ -35,5 +35,5 @@
 #search-addon {
   background-color: rgb(35, 58, 56);  
   color: rgb(240, 192, 109);
-  border-left: 1px solid rgba(240, 192, 109, 1) !important;
+  border-left: .05rem solid rgba(240, 192, 109, 1) !important;
 }

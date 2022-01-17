@@ -5,7 +5,7 @@
 }
 
 #help-accordion .accordion-item {
-  border: .5px solid rgba(240, 192, 109);
+  border: .01rem solid rgba(240, 192, 109);
 }
 
 #help-accordion .accordion-button, .accordion-button:focus {
@@ -18,7 +18,7 @@
 
 #help-accordion .accordion-button::after {
 background-color: rgba(240, 192, 109);
-border-radius: 5px;
+border-radius: .25rem;
 }
 
 #help-accordion .accordion-collapse {

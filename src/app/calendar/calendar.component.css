@@ -3,9 +3,9 @@
 full-calendar {
   max-width: 1280px;
   height: 60vh;
-  margin: auto auto 75px auto;
+  margin: auto auto 4rem auto;
   background-color: rgba(35, 58, 56, .95);
   color: white;
-  padding: 5px;
-  border-radius: 5px;
+  padding: .25rem;
+  border-radius: .25rem;
 }

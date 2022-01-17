@@ -5,7 +5,7 @@
   position: fixed;
   width: 4.5rem !important;
   background-color: rgb(35, 58, 56);
-  border-right: 1px solid rgba(240, 192, 109);
+  border-right: .1rem solid rgba(240, 192, 109);
 }
 
 .navigation-bar i {
@@ -40,7 +40,7 @@
 }
 
 .navbar-logo {
-  width: 30px;
+  width: 2rem;
   display: block;
   margin: 0 auto 0 auto;
   padding: 0;
@@ -48,7 +48,7 @@
 }
 
 .navbar-logo-div {
-  border-bottom: 2px solid rgba(240, 192, 109, .5);
+  border-bottom: .1rem solid rgba(240, 192, 109, .5);
 }
 
 a:hover .navbar-logo {
