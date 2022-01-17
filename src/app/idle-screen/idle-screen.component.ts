@@ -9,6 +9,7 @@ declare var $: any;
 export class IdleScreenComponent implements OnInit {
   time = new Date();
   idleTime: any = 180000; // 3 minutes in milliseconds
+  logoPath: string = 'assets/images/AK_logo_menu.png';
 
   constructor() {
     this.setIdleTimeout(this.idleTime, function() {

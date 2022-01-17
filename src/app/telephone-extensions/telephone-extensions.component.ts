@@ -18,10 +18,12 @@ export class TelephoneExtensionsComponent implements OnInit {
   searchFields() {
     // Declare variables
     let input: any, filter: any, table: any, tr: any, tdName: any, i: any, txtValue: any;
+    
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
     table = document.getElementById("extension-table");
     tr = table.getElementsByTagName("tr");
+    
     // Loop through all table rows, and hide those which don't match the search query
     for (i = 0; i < tr.length; i++) {
       tdName = tr[i].getElementsByTagName("td")[0];
@@ -34,6 +36,7 @@ export class TelephoneExtensionsComponent implements OnInit {
         }
       }
     }
+    
     // Show "no results found" message when there is no search results
     if ($('tr:visible').length <= 1) {
       $('.no-results').css("display", "block");

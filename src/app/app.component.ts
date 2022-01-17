@@ -12,7 +12,11 @@ declare var $: any;
 export class AppComponent {
   title: string = 'Aranyklinika - Intranet';
 
-  constructor(private titleService: Title, private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(
+    private titleService: Title,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
     // Dynamic page titles based on their routes and its title values
@@ -31,6 +35,7 @@ export class AppComponent {
         this.titleService.setTitle(ttl + " ‹ " + this.title);
       });
   }
+  
 }
 
   // Bootstrap tooltip function

@@ -26,7 +26,7 @@ router-outlet + * {
 }
 
 .javascript-error {
-  margin: 25px auto 0 auto;
+  margin: 1.5rem auto 0 auto;
 }
 
 /* Calendar styles */
@@ -49,8 +49,8 @@ router-outlet + * {
   background-color: rgba(35, 58, 56, .9);
   color: rgba(240, 192, 109, .9);
   border-radius: 5px;
-  padding: 10px 15px 10px 15px ;
-  margin-bottom: 25px;
+  padding: .75rem 1rem .75rem 1rem ;
+  margin-bottom: 1.5rem;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -62,7 +62,7 @@ router-outlet + * {
   .intranet-calendar .fc-toolbar {
     display: inline-block !important;
     float: none !important;
-    margin-top: 5px !important;
+    margin-top: .25rem !important;
   }
 }
 
@@ -80,7 +80,7 @@ router-outlet + * {
 /* Scrollbar styling */
 
 ::-webkit-scrollbar {
-  width: 7.5px;
+  width: .5rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -89,7 +89,7 @@ router-outlet + * {
 
 ::-webkit-scrollbar-thumb {
   background: rgba(240, 192, 109, .85);
-  border-radius: 5px;
+  border-radius: .25rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -12,8 +12,11 @@ export class MobileComponent implements OnInit {
   time = new Date();
   navbarOpen: boolean = false;
   navigations = NAVIGATIONS;
+  mobileLogoPath: string = 'assets/images/AK_logo_menu.png';
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {  
     // Force close mobile navbar on router changes

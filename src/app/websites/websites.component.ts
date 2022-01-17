@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { LINKS, CATEGORIES } from "./website_links";
-declare var $ :any;
 
 @Component({
   selector: 'app-websites',
@@ -16,7 +15,9 @@ export class WebsitesComponent implements OnInit {
   searchFilter: any = '';
   filterTitle: any = '';
 
-  constructor(public router: Router) { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit(): void { }
   
