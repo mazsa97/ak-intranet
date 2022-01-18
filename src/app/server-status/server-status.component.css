@@ -1,3 +1,10 @@
+.status-footnote {
+  text-align: center !important;
+  margin: 1rem auto 0 auto;
+  width: 100%;
+  font-style: italic;
+}
+
 iframe {
   width: 100%;
   max-width: 1280px;
@@ -7,9 +14,7 @@ iframe {
   border-radius: .25rem; 
 }
 
-.status-footnote {
-  text-align: center !important;
-  margin: 1rem auto 0 auto;
-  width: 100%;
-  font-style: italic;
+a {
+  color: rgb(35, 58, 56);
+  font-weight: bold;
 }
