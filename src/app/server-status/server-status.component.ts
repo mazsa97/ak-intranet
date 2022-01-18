@@ -10,5 +10,10 @@ export class ServerStatusComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void { }
+  
+  // Refresh page, so the iframe refresh too
+  pageRefresh() {
+    location.reload();
+  }
 
 }

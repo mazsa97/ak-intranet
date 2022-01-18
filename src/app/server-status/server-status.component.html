@@ -5,5 +5,14 @@
 <iframe src="https://status.aranyklinika.hu/"></iframe>
 
 <div class="status-footnote">
-  <small>Előfordulhat, hogy az oldal nem elérhető.</small>
+  <small>
+    Előfordulhat, hogy az oldal nem elérhető.
+    <br>
+    <a 
+      routerLink="./" 
+      (click)="pageRefresh()">
+      <i class="fa fa-refresh"></i>
+      Frissítés
+    </a>
+  </small>
 </div>
