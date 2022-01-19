@@ -1,7 +1,6 @@
 /* Global stylesheet for the app's global styling */
 
-/* Montserrat Font Family */
-@font-face {
+@font-face { /* Montserrat Font Family */
   font-family: Montserrat;
   src: url('assets/fonts/Montserrat/Montserrat-Regular.ttf');
   font-weight: normal;
@@ -22,7 +21,7 @@ body {
 
 router-outlet + * {
   display: block;
-  animation: router-fade .25s ease-in-out; /* Display "fade" animation on route changes*/
+  animation: router-fade .25s ease-in-out; /* Display "fade" animation on route changes */
 }
 
 .javascript-error {
