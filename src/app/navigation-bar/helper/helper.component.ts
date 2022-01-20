@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from "../../../environments/environment";
 
 @Component({
   selector: 'app-helper',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelperComponent implements OnInit {
   time = new Date();
+  appVersion = environment.appVersion;
 
   constructor() { }
 
