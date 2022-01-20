@@ -8,7 +8,7 @@ Search for the install button or prompt in your browser!
 Used libraries:
   - Bootstrap
   - Font Awesome
-  - ...
+  - jQuery
   
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 

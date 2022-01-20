@@ -31,8 +31,8 @@ export class AppComponent {
           }
           return appTitle;
         })
-      ).subscribe((ttl: string) => {
-        this.titleService.setTitle(ttl + " ‹ " + this.title);
+      ).subscribe((title: string) => {
+        this.titleService.setTitle(title + " ‹ " + this.title);
       });
   }
   

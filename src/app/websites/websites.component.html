@@ -11,8 +11,7 @@
         class="btn btn-input-clear shadow-none" 
         type="button" 
         (click)="clearInput()">
-        <i class="fa fa-close"></i>
-      </button>
+        <i class="fa fa-close"></i></button>
           <div class="input-group-append">
             <div class="dropdown">
               <button 
@@ -22,8 +21,7 @@
                 data-bs-toggle="dropdown" 
                 aria-haspopup="true" 
                 aria-expanded="false">
-                <i class="fa fa-filter"></i>
-              </button>
+                <i class="fa fa-filter"></i></button>
                 <div class="dropdown-menu" aria-labelledby="filter-dropdown">
                   <a class="dropdown-item" (click)="reset()">Összes</a>
                     <ng-container *ngFor="let category of categories">
@@ -31,8 +29,7 @@
                         class="dropdown-item" 
                         [ngClass]="{'selected-filter': filterTitle == category.name}" 
                         (click)="filterLinksByCategory(category)">
-                        {{category.name}}
-                      </a>
+                        {{category.name}}</a>
                     </ng-container>
                 </div>
               </div>
@@ -62,8 +59,7 @@
             href="{{link.url}}" 
             target="_blank" 
             class="btn link-open shadow-none">
-            Megnyitás
-          </a>
+            Megnyitás</a>
         </div>
       </div>
     </div>
@@ -74,7 +70,6 @@
     class="no-results text-center" 
     *ngIf="(links | filter:searchFilter).length <= 0">
     Nincs keresési találat!
-    <i class="fa fa-link text-danger"></i>
-  </h5>
+    <i class="fa fa-link text-danger"></i></h5>
 </div>
 

@@ -15,9 +15,7 @@ export class WebsitesComponent implements OnInit {
   searchFilter: any = '';
   filterTitle: any = '';
 
-  constructor(
-    public router: Router
-  ) { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void { }
   
@@ -39,6 +37,7 @@ export class WebsitesComponent implements OnInit {
   clearInput() {
     this.searchFilter = '';
   }
+  
 }
 
 

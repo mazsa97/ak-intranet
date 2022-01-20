@@ -7,8 +7,7 @@
     <img 
       [src]="mobileLogoPath" 
       class="navbar-logo-mobile" 
-      alt="AK-logo">
-  </a>
+      alt="AK-logo"></a>
   <button 
     class="navbar-toggler shadow-none" 
     type="button" 
@@ -18,8 +17,7 @@
     aria-expanded="false" 
     aria-label="Toggle navigation" 
     (click)="toggleNavbar()">
-    <i class="fa fa-lg fa-bars navbar-toggler-mobile"></i>
-  </button>
+    <i class="fa fa-lg fa-bars navbar-toggler-mobile"></i></button>
   <div class="collapse navbar-collapse" id="mobile-navbar-content" [ngClass]="{'show': navbarOpen}">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <!-- Display all navigation links -->
@@ -30,8 +28,7 @@
             routerLinkActive="active-navbar-mobile-element" 
             [routerLinkActiveOptions]="{ exact: true }" 
             class="nav-link">
-            {{navigation.name}}
-          </a>
+            {{navigation.name}}</a>
         </li>
       </ng-container>
       <!-- Helper component -->
@@ -42,8 +39,7 @@
           title="" 
           data-bs-toggle="offcanvas" 
           data-bs-target="#intranet-helper-canvas">
-          Súgó
-        </a>
+          Súgó</a>
       </li> 
     </ul>
   </div>
