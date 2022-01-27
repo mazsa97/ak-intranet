@@ -2,10 +2,10 @@
 
 Useful links, informations etc. for our colleagues on our private network only, built with angular.
 The site can be used both on desktop and mobile, thanks to the responsive design.
-This project can be installed via chrome, becuse it's a PWA (Progressive Web Application).
+This project can be installed via supported web browsers, because it's a PWA (Progressive Web Application).
 Search for the install button or prompt in your browser!
 
-Used libraries:
+#### Used libraries:
   - Bootstrap
   - Font Awesome
   - jQuery
