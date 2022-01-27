@@ -10,131 +10,28 @@
   </div>
   <div class="offcanvas-body">
     <div class="accordion accordion-flush" id="help-accordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button 
-            class="accordion-button collapsed"
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#collapse-1" 
-            aria-expanded="false" 
-            aria-controls="collapse-1">
-            Linkek</button>
-        </h2>
-        <div 
-          id="collapse-1" 
-          class="accordion-collapse collapse" 
-          aria-labelledby="flush-headingOne" 
-          data-bs-parent="#help-accordion">
-          <div class="accordion-body">
-            <p>
-              Az aranyklinika alkalmazottainak hasznos weboldalak elérhetőségei, 
-              kategóriákba sorolva, keresési és szűrési lehetőségekkel.
-            </p>
+      <ng-container *ngFor="let helper of helpers">
+        <div class="accordion-item">
+          <h2 class="accordion-header" [id]="'flush-heading' + helper.id">
+            <button 
+              class="accordion-button collapsed"
+              type="button" 
+              data-bs-toggle="collapse" 
+              [attr.data-bs-target]="'#collapse-' + helper.id">{{helper.title}}</button>
+          </h2>
+          <div 
+            [id]="'collapse-' + helper.id" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#help-accordion">
+            <div class="accordion-body">
+              <p>
+                {{helper.content}}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-        <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapse-2" 
-          aria-expanded="false" 
-          aria-controls="collapse-2">
-          Mellékek</button>
-        </h2>
-        <div 
-          id="collapse-2" 
-          class="accordion-collapse collapse" 
-          aria-labelledby="flush-headingTwo" 
-          data-bs-parent="#help-accordion">
-          <div class="accordion-body">
-            <p>
-              A klinikán belült használt telefonos mellékek táblázatba szedve, 
-              melyek között lehetőség van keresésre.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-        <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapse-3" 
-          aria-expanded="false" 
-          aria-controls="collapse-3">
-          Naptár</button>
-        </h2>
-        <div 
-          id="collapse-3" 
-          class="accordion-collapse collapse" 
-          aria-labelledby="flush-headingThree" 
-          data-bs-parent="#help-accordion">
-          <div class="accordion-body">
-          <p>
-            Egy egyszerű naptár amelyet gyorsan el lehet érni minden oldalról. 
-            <br>
-            Lehetőség van a hónapok között előre/hátra lépni.
-          </p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-        <button 
-          class="accordion-button collapsed" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapse-4" 
-          aria-expanded="false" 
-          aria-controls="collapse-4">
-          Képernyőzár</button>
-        </h2>
-        <div 
-          id="collapse-4" 
-          class="accordion-collapse collapse" 
-          aria-labelledby="flush-headingFour" 
-          data-bs-parent="#help-accordion">
-          <div class="accordion-body">
-            <p>
-              3 perc inaktivitás után a képernyő automatikusan zárolásra kerül addig, 
-            ameddig a felhasználó nem nyom meg egy gombot, vagy mozgatja meg a kurzort a képernyőn.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFive">
-          <button 
-            class="accordion-button collapsed" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#collapse-5" 
-            aria-expanded="false" 
-            aria-controls="collapse-5">
-            Telepítés (PWA)</button>
-        </h2>
-        <div 
-          id="collapse-5" 
-          class="accordion-collapse collapse" 
-          aria-labelledby="flush-headingFive" 
-          data-bs-parent="#help-accordion">
-          <div class="accordion-body">
-            <p>
-              Az alkalmazásnál lehetőség van annak telepítésére.
-              <br>
-              Erre mind számítógépen, mind telefonon/tableten lehetőség van a megfelelő felugró ablak segítségével.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </ng-container>
     <hr>
-    <!-- Footnote -->
     <small>
       &copy; Copyright 2014-{{time | date:'yyyy'}} - Aranyklinika, Szeged
       <hr>
