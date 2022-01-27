@@ -22,6 +22,8 @@ body {
 router-outlet + * {
   display: block;
   animation: router-fade .25s ease-in-out; /* Display "fade" animation on route changes */
+  max-width: 1280px;
+  margin: 0 auto 0 auto;
 }
 
 .javascript-error {
