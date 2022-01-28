@@ -1,6 +1,6 @@
-// Telephone extensions 
+// Navigation links
 
-// Extensions interface
+// Navigations model
 export interface Navigations {
   name: string;
   path: string;
@@ -8,7 +8,7 @@ export interface Navigations {
   order: number;
 }
 
-// Extensions array
+// Navigations array
 export const NAVIGATIONS: Navigations[] = [
   { 
   name: 'Főoldal',
