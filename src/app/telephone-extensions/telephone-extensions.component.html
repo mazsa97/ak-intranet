@@ -1,12 +1,12 @@
 <div class="page-header">
-  <h2 class="text-center">Telefon mellékek</h2>
+  <h2 class="text-center">{{contentHeader}}</h2>
   <div class="input-group rounded">
     <input 
       type="text" 
       class="form-control shadow-none" 
-      id="myInput" 
+      id="extension-search" 
       (input)="searchFields()" 
-      placeholder="Keresés..." 
+      [placeholder]="contentPlaceholder" 
       [(ngModel)]="extensionField"/>
     <button 
       class="btn btn-input-clear shadow-none" 
@@ -22,8 +22,8 @@
   <table class="table table-sm table-hover table-extensions" id="extension-table">
     <thead>
       <tr>
-        <th scope="col">Mellék</th>
-        <th scope="col">#</th>
+        <th scope="col">{{columnName1}}</th>
+        <th scope="col">{{columnName2}}</th>
       </tr>
     </thead>
     <tbody>  
@@ -37,6 +37,5 @@
   </table>
 
 <h5 class="no-results text-center">
-  Nincs keresési találat! 
-  <i class="fa fa-phone text-danger"></i>
+   {{contentNoResults}} <i class="fa fa-phone text-danger"></i>
 </h5>

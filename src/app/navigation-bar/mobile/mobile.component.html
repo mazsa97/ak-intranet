@@ -3,11 +3,11 @@
   <a 
     routerLink="" 
     class="d-block p-3 link-dark text-decoration-none" 
-    title="AK intranet">
+    [title]="logoTitle">
     <img 
-      [src]="mobileLogoPath" 
+      [src]="logoPath" 
       class="navbar-logo-mobile" 
-      alt="AK-logo"></a>
+      [alt]="logoAlt"></a>
   <button 
     class="navbar-toggler shadow-none" 
     type="button" 
@@ -34,8 +34,7 @@
           class="nav-link" 
           title="" 
           data-bs-toggle="offcanvas" 
-          data-bs-target="#intranet-helper-canvas">
-          Súgó</a>
+          data-bs-target="#intranet-helper-canvas">{{navbarHelper}}</a>
       </li> 
     </ul>
   </div>

@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent implements OnInit {
+  contentTitle: string = 'A keresett oldal nem található!';
+  contentHelper: string = 'Ellenőrizze, hogy helyesen adta-e meg a címet, vagy használja valamelyik elérhető menüpontunkat.';
 
   constructor() { }
 

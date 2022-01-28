@@ -17,12 +17,9 @@
           <div 
             class="alert alert-light inactive-alert w-75" 
             role="alert">
-            <h2>A képernyő inaktivitás miatt jelenleg zárolva!</h2>
+            <h2>{{contentTitle}}</h2>
             <hr>
-            <small>
-              Nyomjon meg egy <kbd>gomb</kbd>-ot, 
-              vagy mozgassa meg a <kbd>kurzor</kbd>-t az ablak bezárásához!
-            </small>
+            <small [innerHTML]="contentHelper"></small>
           </div>
       </div>
     </div>

@@ -8,6 +8,11 @@ import { LINKS, CATEGORIES } from "./website_links";
   styleUrls: ['./websites.component.css']
 })
 export class WebsitesComponent implements OnInit {
+  contentHeader: string = 'Hasznos linkek';
+  contentPlaceholder: string = 'Keresés...';
+  contentNoResults: string = 'Nincs keresési találat!';
+  contentOpen: string = 'Megnyitás';
+  filterAll: string = 'Összes';
   links: any = LINKS;
   categories: any = CATEGORIES;
   currentUrl: string = '/websites';

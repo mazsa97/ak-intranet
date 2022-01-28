@@ -1,6 +1,6 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="intranet-helper-canvas">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="intranet-helper-canvasLabel">Intranet súgó</h5>
+    <h5 class="offcanvas-title" id="intranet-helper-canvasLabel">{{contentHeader}}</h5>
     <button 
       type="button" 
       class="btn-close text-reset" 
@@ -23,18 +23,16 @@
             class="accordion-collapse collapse" 
             data-bs-parent="#help-accordion">
             <div class="accordion-body">
-              <p>
-                {{helper.content}}
-              </p>
+              <p>{{helper.content}}</p>
             </div>
           </div>
         </div>
       </ng-container>
     <hr>
     <small>
-      &copy; Copyright 2014-{{time | date:'yyyy'}} - Aranyklinika, Szeged
+      {{contentCopyright}}
       <hr>
-      <i>Verzió: {{appVersion}}</i>
+      <i>{{appVersion}}</i>
     </small>
   </div>
 </div>

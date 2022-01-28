@@ -9,10 +9,13 @@ import { NAVIGATIONS } from "../navigations";
   styleUrls: ['./mobile.component.css']
 })
 export class MobileComponent implements OnInit {
+  logoTitle: string = 'Aranyklinika intranet';
+  logoPath: string = 'assets/images/AK_logo_menu.png';
+  logoAlt: string = 'AK-logo';
+  navbarHelper: string = 'Súgó';
   time = new Date();
   navbarOpen: boolean = false;
   navigations = NAVIGATIONS;
-  mobileLogoPath: string = 'assets/images/AK_logo_menu.png';
 
   constructor(private router: Router) { }
 

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
   logoPath: string = 'assets/images/AK_logo.png';
+  welcomeTitle: string = 'Üdvözöljük az Aranyklinika Intranet oldalán!';
+  welcomeNote: string = 'Válasszon az elérhető menüpontok valamelyikéből.';
 
   constructor() { }
 

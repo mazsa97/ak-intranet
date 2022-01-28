@@ -8,6 +8,11 @@ declare var $: any;
   styleUrls: ['./telephone-extensions.component.css']
 })
 export class TelephoneExtensionsComponent implements OnInit {
+  contentHeader: string = 'Telefon mellékek';
+  contentPlaceholder: string = 'Keresés...';
+  contentNoResults: string = 'Nincs keresési találat!';
+  columnName1: string = 'Mellék';
+  columnName2: string = '#';
   extensions = EXTENSIONS;
   extensionField: any;
 
@@ -19,7 +24,7 @@ export class TelephoneExtensionsComponent implements OnInit {
     // Declare variables
     let input: any, filter: any, table: any, tr: any, tdName: any, i: any, txtValue: any;
     
-    input = document.getElementById("myInput");
+    input = document.getElementById("extension-search");
     filter = input.value.toUpperCase();
     table = document.getElementById("extension-table");
     tr = table.getElementsByTagName("tr");
