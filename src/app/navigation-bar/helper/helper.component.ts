@@ -8,8 +8,10 @@ import { environment } from "../../../environments/environment";
   styleUrls: ['./helper.component.css']
 })
 export class HelperComponent implements OnInit {
-  time = new Date();
-  appVersion = environment.appVersion;
+  currentYear: number = new Date().getFullYear();
+  contentHeader: string = 'Intranet súgó';
+  contentCopyright: string = "© Copyright 2014-" + this.currentYear + " - Aranyklinika, Szeged";
+  appVersion = 'Verzió: ' + environment.appVersion;
   helpers = HELPERS;
 
   constructor() { }
