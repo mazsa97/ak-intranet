@@ -8,6 +8,7 @@ import huLocale from '@fullcalendar/core/locales/hu';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
+  contentTitle: string = 'Naptár';
   
   // Set calendar options (view, lang, etc.)
   calendarOptions: CalendarOptions = {
