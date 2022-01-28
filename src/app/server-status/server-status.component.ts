@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server-status.component.css']
 })
 export class ServerStatusComponent implements OnInit {
+  contentHeader: string = 'Szerver státusz';
+  contentHelper: string = 'Előfordulhat, hogy az oldal nem elérhető.';
+  contentRefresh: string = 'Frissítés';
 
   constructor() { }
 

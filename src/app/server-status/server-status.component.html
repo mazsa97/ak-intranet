@@ -1,17 +1,15 @@
 <div class="page-header">
-  <h2 class="text-center">Szerver státusz</h2>
+  <h2 class="text-center">{{contentHeader}}</h2>
 </div>
-
+<!-- Service status iframe -->
 <iframe src="https://status.aranyklinika.hu/"></iframe>
-
 <div class="status-footnote">
   <small>
-    Előfordulhat, hogy az oldal nem elérhető.
+    {{contentHelper}}
     <br>
     <a 
       routerLink="./" 
       (click)="pageRefresh()">
-      <i class="fa fa-refresh"></i>
-      Frissítés</a>
+      <i class="fa fa-refresh"></i>{{contentRefresh}}</a>
   </small>
 </div>
