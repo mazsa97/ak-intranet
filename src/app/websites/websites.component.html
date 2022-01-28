@@ -18,11 +18,9 @@
                 class="btn button-filter-dropdown dropdown-toggle shadow-none" 
                 type="button" 
                 id="filter-dropdown" 
-                data-bs-toggle="dropdown" 
-                aria-haspopup="true" 
-                aria-expanded="false">
+                data-bs-toggle="dropdown">
                 <i class="fa fa-filter"></i></button>
-                <div class="dropdown-menu" aria-labelledby="filter-dropdown">
+                <div class="dropdown-menu">
                   <a class="dropdown-item" (click)="reset()">Összes</a>
                     <ng-container *ngFor="let category of categories">
                       <a 
