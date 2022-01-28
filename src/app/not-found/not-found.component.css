@@ -15,16 +15,3 @@
   text-transform: uppercase;
   margin-bottom: .75rem;
 }
-
-.not-found a {
-  color: rgba(240, 192, 109, 1);
-}
-
-#contact-text {
-  font-size: 90%;
-  font-style: italic;
-}
-
-#not-found-page {
-  text-decoration: underline ;
-}
