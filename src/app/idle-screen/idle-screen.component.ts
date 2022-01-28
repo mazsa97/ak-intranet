@@ -8,6 +8,8 @@ declare var $: any;
   styleUrls: ['./idle-screen.component.css']
 })
 export class IdleScreenComponent implements OnInit {
+  contentTitle: string = 'A képernyő inaktivitás miatt jelenleg zárolva!';
+  contentHelper: string = 'Nyomjon meg egy <kbd>gomb</kbd>-ot, vagy mozgassa meg a <kbd>kurzor</kbd>-t az ablak bezárásához!';
   time = new Date();
   idleTime: any = 180000; // 3 minutes in milliseconds
   logoPath: string = 'assets/images/AK_logo_menu.png';
