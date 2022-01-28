@@ -36,7 +36,7 @@
   background-color: rgba(35, 58, 56, .9);
   color: white;
   margin: 1rem auto 1rem auto;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem;
   max-width: 400px;
   transition: all .4s;
 }
@@ -131,23 +131,30 @@
     font-size: .75rem;
     margin: .1rem .25rem .1rem .25rem;
   }
+  
   .dropdown {
     text-align: center;
   }
-}
-
-@media only screen and (max-width: 768px) {
+  
   .card-title {
     font-size: smaller;
   }
+  
   .link-open {
     font-size: smaller;
   }
+  
   .link-thumbnail {
     width: 80%;
     height: auto;
   }
+  
   .small-url {
     font-size: .75rem;
   }
+  
+  .row>* {
+    padding: 0px !important; /* Override bootstrap padding */
+  }
+  
 }

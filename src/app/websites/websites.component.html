@@ -28,8 +28,7 @@
                       <a 
                         class="dropdown-item" 
                         [ngClass]="{'selected-filter': filterTitle == category.name}" 
-                        (click)="filterLinksByCategory(category)">
-                        {{category.name}}</a>
+                        (click)="filterLinksByCategory(category)">{{category.name}}</a>
                     </ng-container>
                 </div>
               </div>
@@ -62,8 +61,7 @@
           <a 
             href="{{link.url}}" 
             target="_blank" 
-            class="btn link-open shadow-none">
-            Megnyitás</a>
+            class="btn link-open shadow-none">Megnyitás</a>
         </div>
       </div>
     </div>
