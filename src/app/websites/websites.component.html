@@ -1,11 +1,11 @@
 <!-- Component header, with searchbar, filter dropdown -->
 <div class="page-header">
-  <h2 class="websites-header-title">Hasznos linkek</h2>
+  <h2 class="websites-header-title">{{contentHeader}}</h2>
     <div class="input-group mb-3">
       <input 
         type="text" 
         class="form-control shadow-none search-input" 
-        placeholder="Keresés..." 
+        [placeholder]="contentPlaceholder" 
         [(ngModel)]="searchFilter">
       <button 
         class="btn btn-input-clear shadow-none" 
@@ -21,7 +21,7 @@
                 data-bs-toggle="dropdown">
                 <i class="fa fa-filter"></i></button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" (click)="reset()">Összes</a>
+                  <a class="dropdown-item" (click)="reset()">{{filterAll}}</a>
                     <ng-container *ngFor="let category of categories">
                       <a 
                         class="dropdown-item" 
@@ -45,6 +45,8 @@
 
 <!-- Link cards -->
 <div class="row link-list">
+  
+  <!-- Show all website cards -->
   <ng-container *ngFor="let link of filteredLinks | filter:searchFilter">
     <div class="col-md" >
       <div class="card text-center link-card">
@@ -59,18 +61,19 @@
           <a 
             href="{{link.url}}" 
             target="_blank" 
-            class="btn link-open shadow-none">Megnyitás</a>
+            class="btn link-open shadow-none">{{contentOpen}}</a>
         </div>
       </div>
     </div>
   </ng-container>
+  
   <!-- Show message if there is no results to show -->
   <h5 
     class="no-results text-center" 
     *ngIf="(links | filter:searchFilter).length <= 0">
-    Nincs keresési találat!
-    <i class="fa fa-link text-danger"></i>
+    {{contentNoResults}} <i class="fa fa-link text-danger"></i>
   </h5>
+  
 </div>
 
 
