@@ -3,11 +3,11 @@
     <a 
       routerLink="" 
       class="d-block p-3 link-dark text-decoration-none" 
-      title="Aranyklinika intranet">
+      [title]="logoTitle">
       <img 
-        src="assets/images/AK_logo_menu.png" 
+        [src]="logoPath" 
         class="navbar-logo" 
-        alt="AK-logo"></a>
+        [alt]="logoAlt"></a>
   </div>
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <!-- Display all navigation links -->
@@ -26,7 +26,7 @@
       </ng-container>
       <!-- Helper component -->
       <li class="nav-item navigation-help-button">
-        <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Súgó">
+        <span data-bs-toggle="tooltip" data-bs-placement="right" [attr.data-bs-original-title]="tooltipHelper">
           <a 
             class="nav-link py-3 border-bottom" 
             data-bs-toggle="offcanvas" 
