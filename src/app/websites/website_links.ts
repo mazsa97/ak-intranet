@@ -40,125 +40,125 @@ export const CATEGORIES: Categories[] = [
 
 // Link objects
 export const LINKS: Links[] = [
-  { 
-    name: 'E-rendelő', 
+  {
+    name: 'E-rendelő',
     category: [1, 2, 3, 4, 5],
-    url: 'https://lddsystems.eu/rendelo', 
-    image: 'assets/images/thumbnails/e_rendelo.png' 
+    url: 'https://lddsystems.eu/rendelo',
+    image: 'assets/images/thumbnails/e_rendelo.png'
   },
-  { 
-    name: 'ERP', 
+  {
+    name: 'ERP',
     category: [1, 2, 4, 5],
-    url: 'http://erp.lddsystems.eu/web/login', 
-    image: 'assets/images/thumbnails/erp.png' 
+    url: 'http://erp.lddsystems.eu/web/login',
+    image: 'assets/images/thumbnails/erp.png'
   },
-  { 
-    name: 'Slack', 
-    category: [1], 
-    url: 'http://aranyklinika.slack.com', 
-    image: 'assets/images/thumbnails/slack.jpg' 
+  {
+    name: 'Slack',
+    category: [1],
+    url: 'http://aranyklinika.slack.com',
+    image: 'assets/images/thumbnails/slack.jpg'
   },
-  { 
-    name: 'Beosztás', 
-    category: [1], 
-    url: 'https://tinyurl.com/ak-beosztas', 
-    image: 'assets/images/thumbnails/beosztas.png' 
+  {
+    name: 'Beosztás',
+    category: [1],
+    url: 'https://tinyurl.com/ak-beosztas',
+    image: 'assets/images/thumbnails/beosztas.png'
   },
-  { 
-    name: 'Aranyklinika', 
+  {
+    name: 'Aranyklinika',
     category: [1, 4],
-    url: 'https://aranyklinika.hu/', 
-    image: 'assets/images/thumbnails/aranyklinika.png' 
+    url: 'https://aranyklinika.hu/',
+    image: 'assets/images/thumbnails/aranyklinika.png'
   },
-  { 
-    name: 'Komplexlabor', 
+  {
+    name: 'Komplexlabor',
     category: [1, 4],
-    url: 'https://komplexlabor.hu/', 
-    image: 'assets/images/thumbnails/komplexlabor.png' 
+    url: 'https://komplexlabor.hu/',
+    image: 'assets/images/thumbnails/komplexlabor.png'
   },
-  { 
-    name: 'GitHub', 
+  {
+    name: 'GitHub',
     category: [2, 3, 5],
-    url: 'https://github.com/aranyklinika', 
-    image: 'assets/images/thumbnails/github.png' 
+    url: 'https://github.com/aranyklinika',
+    image: 'assets/images/thumbnails/github.png'
   },
-  { 
-    name: 'IP Portál', 
+  {
+    name: 'IP Portál',
     category: [2],
-    url: 'https://aranyklinika.ip-telefon.hu/ipportal/', 
-    image: 'assets/images/thumbnails/ip_portal.png' 
+    url: 'https://aranyklinika.ip-telefon.hu/ipportal/',
+    image: 'assets/images/thumbnails/ip_portal.png'
   },
-  { 
-    name: 'Rextra', 
+  {
+    name: 'Rextra',
     category: [2],
-    url: 'https://rextra.hu/', 
-    image: 'assets/images/thumbnails/rextra.png' 
+    url: 'https://rextra.hu/',
+    image: 'assets/images/thumbnails/rextra.png'
   },
-  { 
-    name: 'Fordító', 
+  {
+    name: 'Fordító',
     category: [2, 4],
-    url: 'https://translate.google.com/', 
-    image: 'assets/images/thumbnails/fordito.png' 
+    url: 'https://translate.google.com/',
+    image: 'assets/images/thumbnails/fordito.png'
   },
-  { 
-    name: 'Paracelsus Humán Medicina', 
+  {
+    name: 'Paracelsus Humán Medicina',
     category: [2],
-    url: 'https://www.paracelsusmedicina.hu/', 
-    image: 'assets/images/thumbnails/paracelus.png' 
+    url: 'https://www.paracelsusmedicina.hu/',
+    image: 'assets/images/thumbnails/paracelus.png'
   },
-  { 
-    name: 'Simple Pay', 
+  {
+    name: 'Simple Pay',
     category: [2, 3],
-    url: 'https://simplepay.hu/', 
-    image: 'assets/images/thumbnails/simplepay.png' 
+    url: 'https://simplepay.hu/',
+    image: 'assets/images/thumbnails/simplepay.png'
   },
-  { 
-    name: 'NAV', 
+  {
+    name: 'NAV',
     category: [2],
-    url: 'https://www.nav.gov.hu/', 
-    image: 'assets/images/thumbnails/nav.png' 
+    url: 'https://www.nav.gov.hu/',
+    image: 'assets/images/thumbnails/nav.png'
   },
-  { 
-    name: 'Számlázz', 
+  {
+    name: 'Számlázz',
     category: [2, 3],
-    url: 'https://www.szamlazz.hu/', 
-    image: 'assets/images/thumbnails/szamlazz.png' 
+    url: 'https://www.szamlazz.hu/',
+    image: 'assets/images/thumbnails/szamlazz.png'
   },
-  { 
-    name: 'YNAB', 
+  {
+    name: 'YNAB',
     category: [2, 3],
-    url: 'https://www.youneedabudget.com', 
-    image: 'assets/images/thumbnails/ynab.png' 
+    url: 'https://www.youneedabudget.com',
+    image: 'assets/images/thumbnails/ynab.png'
   },
-  { 
-    name: 'ANTSZ', 
+  {
+    name: 'ANTSZ',
     category: [3],
-    url: 'https://www.antsz.hu/', 
-    image: 'assets/images/thumbnails/antsz.png' 
+    url: 'https://www.antsz.hu/',
+    image: 'assets/images/thumbnails/antsz.png'
   },
-  { 
-    name: 'MEDITOR', 
+  {
+    name: 'MEDITOR',
     category: [4],
-    url: 'http://www.kopifo.hu/', 
-    image: 'assets/images/thumbnails/meditor.png' 
+    url: 'http://www.kopifo.hu/',
+    image: 'assets/images/thumbnails/meditor.png'
   },
-  { 
-    name: 'GMAIL', 
+  {
+    name: 'GMAIL',
     category: [1, 2, 3, 4, 5],
-    url: 'https://mail.google.com/', 
-    image: 'assets/images/thumbnails/gmail.png' 
+    url: 'https://mail.google.com/',
+    image: 'assets/images/thumbnails/gmail.png'
   },
-  { 
-    name: 'LastPass', 
+  {
+    name: 'LastPass',
     category: [5],
-    url: 'https://www.lastpass.com/', 
-    image: 'assets/images/thumbnails/lastpass.png' 
+    url: 'https://www.lastpass.com/',
+    image: 'assets/images/thumbnails/lastpass.png'
   },
-  { 
-    name: 'Státusz', 
+  {
+    name: 'Státusz',
     category: [5],
-    url: 'https://status.aranyklinika.hu/', 
-    image: 'assets/images/thumbnails/statusz.png' 
+    url: 'https://status.aranyklinika.hu/',
+    image: 'assets/images/thumbnails/statusz.png'
   },
 ];
 
@@ -168,10 +168,10 @@ CATEGORIES.sort(compareNames);
 
 // Function for comparing values (for alphabetical sorting purposes)
 function compareNames(a: any, b: any) {
-  if ( a.name < b.name ){
+  if (a.name < b.name) {
     return -1;
   }
-  if ( a.name > b.name ){
+  if (a.name > b.name) {
     return 1;
   }
   return 0;
