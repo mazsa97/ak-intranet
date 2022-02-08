@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from "@angular/router/testing";
+import { Ng2SearchPipeModule } from "ng2-search-filter";
 
 import { WebsitesComponent } from './websites.component';
 
@@ -8,6 +10,10 @@ describe('WebsitesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ 
+        RouterTestingModule,
+        Ng2SearchPipeModule
+      ],
       declarations: [ WebsitesComponent ]
     })
     .compileComponents();

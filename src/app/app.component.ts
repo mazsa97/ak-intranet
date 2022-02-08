@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from "@angular/platform-browser";
 import { Router, NavigationEnd, ActivatedRoute } from "@angular/router";
 import { filter, map } from 'rxjs/operators';
+
 declare var $: any;
 
 @Component({
@@ -10,7 +11,8 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Aranyklinika - Intranet';
+  title: string = 'ak-intranet';
+  headerTitle: string = 'Aranyklinika - Intranet';
 
   constructor(
     private titleService: Title,
@@ -32,10 +34,9 @@ export class AppComponent {
           return appTitle;
         })
       ).subscribe((title: string) => {
-        this.titleService.setTitle(title + " ‹ " + this.title);
+        this.titleService.setTitle(title + " ‹ " + this.headerTitle);
       });
   }
-  
 }
 
   // Bootstrap tooltip function
@@ -48,4 +49,4 @@ export class AppComponent {
     $('[data-bs-toggle="tooltip"]').click(function() {
       $('[data-bs-toggle="tooltip"]').tooltip("hide");
     });
-  });
+  }); 
