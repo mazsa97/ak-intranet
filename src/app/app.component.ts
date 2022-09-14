@@ -40,9 +40,7 @@ export class AppComponent {
 }
 
   // Bootstrap tooltip function
-  $(function() {
-    $('[data-bs-toggle="tooltip"]').tooltip();
-  })
+  $(function() { $('[data-bs-toggle="tooltip"]').tooltip(); });
 
   // Hide tooltip after clicking on it, preventing tooltip staying active on the screen
   $(document).ready(function() {
